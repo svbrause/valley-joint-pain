@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 110" width="460" height="110">
+  <title>Valley Joint Pain Center — horizontal single-line lockup</title>
+  <desc>Compact single-line lockup: hinge mark followed by Valley Joint Pain on one line. For tight horizontal spaces, email signatures, and headers.</desc>
+
+  <!-- Mark -->
+  <g transform="translate(55, 55)">
+    <path d="M -5 -28 Q -28 -28 -28 -5 L -28 5 Q -28 28 -5 28" stroke="#0a3d42" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 5 -28 Q 28 -28 28 -5 L 28 5 Q 28 28 5 28" stroke="#0a3d42" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="4.5" fill="#c8780a"/>
+  </g>
+
+  <!-- Divider -->
+  <line x1="108" y1="20" x2="108" y2="90" stroke="#d8d3c7" stroke-width="0.5"/>
+
+  <!-- Wordmark — single line using tspan for mixed weight/style -->
+  <text x="128" y="66" font-family="Lora, Georgia, serif" font-size="32" fill="#0a3d42">
+    <tspan font-weight="500">Valley </tspan><tspan font-weight="400" font-style="italic" fill="#0d5c63">Joint Pain</tspan>
+  </text>
+
+</svg>

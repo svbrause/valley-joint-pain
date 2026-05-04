@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <title>Valley Joint Pain Center mark — single color</title>
+  <desc>Hinge mark in a single ink color, for fax, embossing, or one-color print.</desc>
+  <g transform="translate(100, 100)">
+    <path d="M -10 -55 Q -55 -55 -55 -10 L -55 10 Q -55 55 -10 55" stroke="#15201f" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 10 -55 Q 55 -55 55 -10 L 55 10 Q 55 55 10 55" stroke="#15201f" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="9" fill="#15201f"/>
+  </g>
+</svg>

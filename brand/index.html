@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Valley Joint Pain Center — Brand Package Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal-900: #0a3d42; --teal-700: #0d5c63; --teal-50: #ecf5f5;
+    --amber: #c8780a; --amber-soft: #e8a043;
+    --bone: #faf8f3; --cloud: #f5f3ee;
+    --line: #d8d3c7; --line-soft: #ebe7dc;
+    --ink: #15201f; --ink-soft: #4a5957;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DM Sans', system-ui, sans-serif; background: var(--bone); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3 { font-family: 'Lora', Georgia, serif; font-weight: 500; line-height: 1.15; color: var(--teal-900); letter-spacing: -0.01em; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 80px 32px; }
+  .header { text-align: center; padding: 100px 32px 60px; background: var(--cloud); border-bottom: 1px solid var(--line-soft); }
+  .header h1 { font-size: 56px; margin-bottom: 16px; }
+  .header h1 em { font-style: italic; color: var(--amber); }
+  .header p { font-size: 18px; color: var(--ink-soft); max-width: 540px; margin: 0 auto; }
+  .eyebrow { font-size: 12px; font-weight: 500; color: var(--teal-700); letter-spacing: 1.4px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+  .eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--teal-700); }
+  .section { padding: 80px 0; border-bottom: 1px solid var(--line-soft); }
+  .section h2 { font-size: 36px; margin-bottom: 12px; }
+  .section-desc { font-size: 16px; color: var(--ink-soft); max-width: 600px; margin-bottom: 48px; }
+  .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .card { background: var(--bone); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+  .card-frame { aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; padding: 32px; background: var(--bone); }
+  .card-frame.dark { background: var(--teal-900); }
+  .card-frame img { max-width: 100%; max-height: 100%; }
+  .card-meta { padding: 16px 20px; border-top: 1px solid var(--line-soft); }
+  .card-name { font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 4px; }
+  .card-file { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-soft); }
+  .swatch { aspect-ratio: 4 / 3; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 4px; }
+  .swatch-name { font-family: 'Lora', serif; font-style: italic; font-size: 22px; }
+  .swatch-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; opacity: 0.75; }
+  .swatch.dark { color: var(--bone); }
+  .swatch.light { color: var(--ink); border: 1px solid var(--line); }
+  .type-card { background: var(--bone); border: 1px solid var(--line); border-radius: 4px; padding: 36px; }
+  .type-name { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-soft); letter-spacing: 1.4px; text-transform: uppercase; margin-bottom: 16px; }
+  .type-spec { font-size: 14px; color: var(--ink-soft); margin-top: 16px; }
+  .download-banner { background: var(--teal-900); color: var(--bone); padding: 60px 32px; text-align: center; margin-top: 0; }
+  .download-banner h2 { color: var(--bone); margin-bottom: 12px; }
+  .download-banner p { color: rgba(250,248,243,0.75); max-width: 540px; margin: 0 auto 28px; }
+  .file-list { background: rgba(0,0,0,0.18); border-radius: 4px; padding: 24px; max-width: 600px; margin: 0 auto; text-align: left; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 2; color: rgba(250,248,243,0.85); }
+  .stationery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .biz-card { aspect-ratio: 7/4; border-radius: 4px; box-shadow: 0 4px 24px rgba(10,61,66,0.08); overflow: hidden; }
+  .biz-card svg, .biz-card img { width: 100%; height: 100%; display: block; }
+  @media (max-width: 768px) {
+    .grid-2, .grid-3, .stationery-grid { grid-template-columns: 1fr; }
+    .header h1 { font-size: 36px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="header">
+  <img src="logos/08-horizontal-single-line-primary.svg" alt="Valley Joint Pain Center" style="height: 72px; margin-bottom: 32px;" />
+  <h1>The brand <em>package</em></h1>
+  <p>Every asset, every file, in one place. Click any item to open the source SVG. Read <code>docs/brand-guidelines.md</code> for the full system.</p>
+</header>
+
+<div class="wrap">
+
+  <!-- LOGOS -->
+  <section class="section">
+    <div class="eyebrow">01 · The mark</div>
+    <h2>Logo & lockups</h2>
+    <p class="section-desc">Nine approved configurations covering every context — light surfaces, dark surfaces, square spaces, single-color reproduction, and compact single-line headers.</p>
+
+    <div class="grid-3" style="margin-bottom: 24px;">
+      <div class="card">
+        <div class="card-frame"><img src="logos/01-mark-only-primary.svg" alt="" style="height: 120px;"/></div>
+        <div class="card-meta"><div class="card-name">Mark · primary</div><div class="card-file">01-mark-only-primary.svg</div></div>
+      </div>
+      <div class="card">
+        <div class="card-frame dark"><img src="logos/02-mark-only-reversed.svg" alt="" style="height: 120px;"/></div>
+        <div class="card-meta"><div class="card-name">Mark · reversed</div><div class="card-file">02-mark-only-reversed.svg</div></div>
+      </div>
+      <div class="card">
+        <div class="card-frame"><img src="logos/03-mark-only-mono.svg" alt="" style="height: 120px;"/></div>
+        <div class="card-meta"><div class="card-name">Mark · single color</div><div class="card-file">03-mark-only-mono.svg</div></div>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-bottom: 24px;">
+      <div class="card">
+        <div class="card-frame"><img src="logos/04-horizontal-primary.svg" alt="" style="width: 90%;"/></div>
+        <div class="card-meta"><div class="card-name">Horizontal · primary (two-line)</div><div class="card-file">04-horizontal-primary.svg · letterhead, spacious headers</div></div>
+      </div>
+      <div class="card">
+        <div class="card-frame dark"><img src="logos/05-horizontal-reversed.svg" alt="" style="width: 90%;"/></div>
+        <div class="card-meta"><div class="card-name">Horizontal · reversed (two-line)</div><div class="card-file">05-horizontal-reversed.svg · formal dark layouts</div></div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-frame" style="aspect-ratio: 4/3;"><img src="logos/06-stacked-primary.svg" alt="" style="height: 80%;"/></div>
+        <div class="card-meta"><div class="card-name">Stacked · primary</div><div class="card-file">06-stacked-primary.svg · square spaces</div></div>
+      </div>
+      <div class="card">
+        <div class="card-frame dark" style="aspect-ratio: 4/3;"><img src="logos/07-stacked-reversed.svg" alt="" style="height: 80%;"/></div>
+        <div class="card-meta"><div class="card-name">Stacked · reversed</div><div class="card-file">07-stacked-reversed.svg</div></div>
+      </div>
+    </div>
+
+    <div style="margin-top: 24px;">
+      <div style="font-size: 13px; color: var(--ink-soft); margin-bottom: 16px; font-weight: 500;">Single-line horizontal lockups</div>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-frame"><img src="logos/08-horizontal-single-line-primary.svg" alt="" style="width: 90%;"/></div>
+        <div class="card-meta"><div class="card-name">Horizontal single-line · primary</div><div class="card-file">08-horizontal-single-line-primary.svg · valleyjointpain.com nav (default)</div></div>
+      </div>
+      <div class="card">
+        <div class="card-frame dark"><img src="logos/09-horizontal-single-line-reversed.svg" alt="" style="width: 90%;"/></div>
+        <div class="card-meta"><div class="card-name">Horizontal single-line · reversed</div><div class="card-file">09-horizontal-single-line-reversed.svg · compact dark headers</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLOR -->
+  <section class="section">
+    <div class="eyebrow">02 · Color system</div>
+    <h2>The 60-25-8-5-2 ratio</h2>
+    <p class="section-desc">A restrained palette. Two anchors, three supports. Amber appears only on calls-to-action and accent moments — its scarcity is what makes it earn attention.</p>
+
+    <div class="grid-3" style="grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; gap: 12px;">
+      <div class="swatch dark" style="background: #0a3d42;">
+        <div><div style="font-size: 11px; opacity: 0.7; letter-spacing: 1.2px; text-transform: uppercase;">Primary · 25%</div></div>
+        <div><div class="swatch-name">Deep Teal</div><div class="swatch-meta">#0A3D42</div></div>
+      </div>
+      <div class="swatch dark" style="background: #c8780a;">
+        <div><div style="font-size: 11px; opacity: 0.85; letter-spacing: 1.2px; text-transform: uppercase;">Accent · 8%</div></div>
+        <div><div class="swatch-name">Amber</div><div class="swatch-meta">#C8780A</div></div>
+      </div>
+      <div class="swatch light" style="background: #faf8f3;">
+        <div><div style="font-size: 11px; opacity: 0.7; letter-spacing: 1.2px; text-transform: uppercase;">Surface · 60%</div></div>
+        <div><div class="swatch-name">Bone</div><div class="swatch-meta">#FAF8F3</div></div>
+      </div>
+      <div class="swatch light" style="background: #f5f3ee;">
+        <div><div style="font-size: 11px; opacity: 0.7; letter-spacing: 1.2px; text-transform: uppercase;">Cloud · 5%</div></div>
+        <div><div class="swatch-name">Cloud</div><div class="swatch-meta">#F5F3EE</div></div>
+      </div>
+      <div class="swatch dark" style="background: #15201f;">
+        <div><div style="font-size: 11px; opacity: 0.7; letter-spacing: 1.2px; text-transform: uppercase;">Ink · 2%</div></div>
+        <div><div class="swatch-name">Ink</div><div class="swatch-meta">#15201F</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPE -->
+  <section class="section">
+    <div class="eyebrow">03 · Typography</div>
+    <h2>Lora & DM Sans</h2>
+    <p class="section-desc">A serif-and-sans pairing already proven in editorial medical contexts. Both Google Fonts. Both free. Both load fast.</p>
+
+    <div class="grid-2">
+      <div class="type-card">
+        <div class="type-name">Display · Lora Serif</div>
+        <div style="font-family: 'Lora', serif; font-weight: 500; font-size: 56px; color: var(--teal-900); line-height: 1;">Aa Vv</div>
+        <div style="font-family: 'Lora', serif; font-weight: 400; font-style: italic; font-size: 28px; color: var(--teal-700); margin-top: 12px;">italic for emphasis</div>
+        <div class="type-spec">Headlines, hero copy, doctor name, testimonials, large stats.<br><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-soft);">weights: 400 · 500 · italic</span></div>
+      </div>
+      <div class="type-card">
+        <div class="type-name">Body · DM Sans</div>
+        <div style="font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 56px; color: var(--teal-900); line-height: 1;">Aa Vv</div>
+        <div style="font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 22px; color: var(--ink-soft); margin-top: 12px;">approachable · readable · clean</div>
+        <div class="type-spec">Body text, navigation, buttons, forms, all UI elements.<br><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-soft);">weights: 300 · 400 · 500</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATIONERY -->
+  <section class="section">
+    <div class="eyebrow">04 · Applications</div>
+    <h2>Stationery</h2>
+    <p class="section-desc">Print-ready templates at standard sizes. Send these directly to your printer or convert to PDF for sharing.</p>
+
+    <div class="stationery-grid" style="margin-bottom: 32px;">
+      <div>
+        <div class="biz-card"><img src="templates/business-card-front.svg" alt="Business card front"/></div>
+        <div class="card-meta" style="border: 1px solid var(--line); border-top: none;">
+          <div class="card-name">Business card · front</div>
+          <div class="card-file">templates/business-card-front.svg</div>
+        </div>
+      </div>
+      <div>
+        <div class="biz-card"><img src="templates/business-card-back.svg" alt="Business card back"/></div>
+        <div class="card-meta" style="border: 1px solid var(--line); border-top: none;">
+          <div class="card-name">Business card · back</div>
+          <div class="card-file">templates/business-card-back.svg</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-frame" style="aspect-ratio: 8.5/11; max-height: 600px; padding: 0;"><img src="templates/letterhead.svg" alt="Letterhead" style="max-height: 100%; max-width: 100%;"/></div>
+      <div class="card-meta">
+        <div class="card-name">Letterhead · US Letter, 8.5×11</div>
+        <div class="card-file">templates/letterhead.svg</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIGITAL -->
+  <section class="section">
+    <div class="eyebrow">05 · Digital</div>
+    <h2>Web & social</h2>
+    <p class="section-desc">Favicon for the browser tab, app icon for iOS home screen, and the Open Graph card that displays when valleyjointpain.com is shared on social or in messaging.</p>
+
+    <div class="grid-3" style="margin-bottom: 24px;">
+      <div class="card">
+        <div class="card-frame" style="aspect-ratio: 1/1; padding: 60px;"><img src="favicons/favicon.svg" alt="" style="width: 100%;"/></div>
+        <div class="card-meta"><div class="card-name">Favicon · 32×32</div><div class="card-file">favicons/favicon.svg</div></div>
+      </div>
+      <div class="card">
+        <div class="card-frame" style="aspect-ratio: 1/1; padding: 40px;"><img src="favicons/apple-touch-icon.svg" alt="" style="width: 100%; border-radius: 18px;"/></div>
+        <div class="card-meta"><div class="card-name">App icon · 180×180</div><div class="card-file">favicons/apple-touch-icon.svg</div></div>
+      </div>
+      <div class="card">
+        <div class="card-frame" style="aspect-ratio: 1/1; background: var(--cloud); padding: 36px; flex-direction: column; gap: 16px;">
+          <div style="display: flex; gap: 6px;">
+            <div style="width: 24px; height: 24px; background: var(--line); border-radius: 50%;"></div>
+            <div style="flex: 1;">
+              <div style="font-size: 11px; font-weight: 500; color: var(--ink);">From a friend</div>
+              <div style="font-size: 10px; color: var(--ink-soft);">via iMessage</div>
+            </div>
+          </div>
+          <div style="font-size: 12px; color: var(--ink); align-self: flex-start; background: var(--bone); padding: 8px 12px; border-radius: 12px;">Try this — they helped my mom</div>
+        </div>
+        <div class="card-meta"><div class="card-name">OG share card · 1200×630</div><div class="card-file">templates/og-image.svg</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-frame" style="aspect-ratio: 1200/630; padding: 0;"><img src="templates/og-image.svg" alt="OG image" style="width: 100%; height: 100%; object-fit: cover;"/></div>
+      <div class="card-meta">
+        <div class="card-name">Open Graph share card · how it appears when the site is shared</div>
+        <div class="card-file">templates/og-image.svg</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- FILE LIST -->
+<section class="download-banner">
+  <h2 style="font-family: 'Lora', serif;">Everything in this package</h2>
+  <p>All files are SVG, CSS, or markdown — plain-text, future-proof, version-controllable.</p>
+  <div class="file-list">brand/<br>
+&nbsp;&nbsp;├── README.md<br>
+&nbsp;&nbsp;├── index.html&nbsp;&nbsp;<span style="opacity: 0.5;">← you are here</span><br>
+&nbsp;&nbsp;├── docs/<br>
+&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── brand-guidelines.md<br>
+&nbsp;&nbsp;├── logos/&nbsp;&nbsp;<span style="opacity: 0.5;">(9 SVG files — marks + lockups)</span><br>
+&nbsp;&nbsp;├── favicons/&nbsp;&nbsp;<span style="opacity: 0.5;">(favicon + apple-touch-icon)</span><br>
+&nbsp;&nbsp;├── colors/&nbsp;&nbsp;<span style="opacity: 0.5;">(colors.css — drop into any project)</span><br>
+&nbsp;&nbsp;├── typography/&nbsp;&nbsp;<span style="opacity: 0.5;">(typography.css)</span><br>
+&nbsp;&nbsp;└── templates/&nbsp;&nbsp;<span style="opacity: 0.5;">(business card, letterhead, OG image)</span></div>
+</section>
+
+</body>
+</html>

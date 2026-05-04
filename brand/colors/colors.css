@@ -1,0 +1,58 @@
+/* ==============================================
+   Valley Joint Pain Center — Brand Color System
+   v1.0
+   ============================================== */
+
+:root {
+  /* PRIMARY — anchors the brand */
+  --vjp-teal-900: #0a3d42;     /* Primary brand teal — nav, footer, hero panels */
+  --vjp-teal-700: #0d5c63;     /* Italic accent variant */
+  --vjp-teal-500: #1a8a93;     /* Hover states, lighter strokes */
+  --vjp-teal-100: #d6ebed;     /* Background tints, illustration soft fills */
+  --vjp-teal-50:  #ecf5f5;     /* Lightest tint, hero visual backgrounds */
+
+  /* ACCENT — use sparingly */
+  --vjp-amber:      #c8780a;   /* CTA buttons, dot in mark, key accents */
+  --vjp-amber-soft: #e8a043;   /* Reversed accent on dark backgrounds */
+
+  /* SURFACE */
+  --vjp-bone:  #faf8f3;        /* Default page background */
+  --vjp-cloud: #f5f3ee;        /* Section variation, subtle differentiation */
+  --vjp-line:       #d8d3c7;   /* Hairline borders, dividers */
+  --vjp-line-soft:  #ebe7dc;   /* Even subtler dividers */
+
+  /* INK */
+  --vjp-ink:      #15201f;     /* Body text */
+  --vjp-ink-soft: #4a5957;     /* Secondary text, captions, muted copy */
+}
+
+/* ==============================================
+   USAGE RATIO (target distribution across pages)
+   ----------------------------------------------
+   Bone (background):     60%
+   Teal-900 (anchor):     25%
+   Cloud (section shift): 5%
+   Amber (CTAs only):     8%
+   Ink (body):            2%
+   ============================================== */
+
+/* ==============================================
+   CTA BUTTON — Reference implementation
+   ============================================== */
+
+.vjp-btn-primary {
+  background: var(--vjp-amber);
+  color: var(--vjp-bone);
+  padding: 16px 28px;
+  border-radius: 999px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.15s;
+}
+.vjp-btn-primary:hover {
+  background: #b56908;
+  transform: translateY(-1px);
+}

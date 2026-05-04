@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 225" width="360" height="225">
+  <title>Valley Joint Pain Center — stacked lockup, reversed</title>
+  <desc>Vertical lockup on the deep teal brand background.</desc>
+
+  <rect width="360" height="280" fill="#0a3d42"/>
+
+  <g transform="translate(180, 75)">
+    <path d="M -5 -28 Q -28 -28 -28 -5 L -28 5 Q -28 28 -5 28" stroke="#faf8f3" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 5 -28 Q 28 -28 28 -5 L 28 5 Q 28 28 5 28" stroke="#faf8f3" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="4.5" fill="#e8a043"/>
+  </g>
+
+  <text x="180" y="160" text-anchor="middle" font-family="Lora, Georgia, serif" font-weight="500" font-size="32" fill="#faf8f3">Valley</text>
+  <text x="180" y="195" text-anchor="middle" font-family="Lora, Georgia, serif" font-weight="400" font-style="italic" font-size="32" fill="#e8a043">Joint Pain</text>
+
+</svg>

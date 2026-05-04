@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2550 3300" width="2550" height="3300">
+  <title>Valley Joint Pain Center letterhead</title>
+  <desc>Standard US letter (8.5x11 inch) letterhead at 300dpi.</desc>
+
+  <rect width="2550" height="3300" fill="#ffffff"/>
+
+  <!-- Header band -->
+  <g transform="translate(220, 200)">
+    <g transform="translate(40, 60)">
+      <path d="M 0 -36 Q -29 -36 -29 -7 L -29 7 Q -29 36 0 36" stroke="#0a3d42" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 13 -36 Q 42 -36 42 -7 L 42 7 Q 42 36 13 36" stroke="#0a3d42" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="6.5" cy="0" r="6" fill="#c8780a"/>
+    </g>
+    <text x="120" y="50" font-family="Lora, Georgia, serif" font-weight="500" font-size="44" fill="#0a3d42">Valley</text>
+    <text x="120" y="100" font-family="Lora, Georgia, serif" font-weight="400" font-style="italic" font-size="44" fill="#0d5c63">Joint Pain</text>
+
+    <!-- Right-aligned contact -->
+    <text x="2050" y="40" text-anchor="end" font-family="DM Sans, system-ui, sans-serif" font-size="22" fill="#4a5957">14411 Hamlin St</text>
+    <text x="2050" y="72" text-anchor="end" font-family="DM Sans, system-ui, sans-serif" font-size="22" fill="#4a5957">Van Nuys, CA 91401</text>
+    <text x="2050" y="104" text-anchor="end" font-family="DM Sans, system-ui, sans-serif" font-size="22" fill="#4a5957">(818) 555-0123 · valleyjointpain.com</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="220" y1="370" x2="2330" y2="370" stroke="#0a3d42" stroke-width="1"/>
+
+  <!-- Footer signature line at bottom -->
+  <line x1="220" y1="3000" x2="2330" y2="3000" stroke="#d8d3c7" stroke-width="0.5"/>
+  <text x="220" y="3050" font-family="DM Sans, system-ui, sans-serif" font-weight="500" font-size="20" fill="#4a5957" letter-spacing="3">DR. ____ ____, MD · BOARD-CERTIFIED INTERVENTIONAL RADIOLOGY</text>
+  <text x="2330" y="3050" text-anchor="end" font-family="DM Sans, system-ui, sans-serif" font-size="20" fill="#4a5957">CA Medical License · NPI</text>
+</svg>

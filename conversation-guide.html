@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Talking to Your Doctor About Non-Surgical Knee Pain Options — Valley Joint Pain Center</title>
+<style>
+  @page {
+    size: letter;
+    margin: 0.75in 0.85in 0.85in 0.85in;
+    @bottom-left {
+      content: "valleyjointpain.com  ·  (818) 418-8165";
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8pt;
+      color: #4a5957;
+    }
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8pt;
+      color: #4a5957;
+    }
+  }
+  @page :first {
+    margin: 0;
+    @bottom-left { content: ""; }
+    @bottom-right { content: ""; }
+  }
+  @page cover {
+    margin: 0;
+  }
+
+  /* TYPOGRAPHY — match brand system */
+  body {
+    font-family: 'DM Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #15201f;
+    line-height: 1.55;
+    font-size: 10.5pt;
+    margin: 0;
+  }
+  h1, h2, h3 {
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 500;
+    color: #0a3d42;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  h1 { font-size: 28pt; margin: 0 0 12pt; }
+  h2 { font-size: 19pt; margin: 24pt 0 10pt; }
+  h3 { font-size: 13pt; margin: 16pt 0 6pt; color: #15201f; }
+  em { font-style: italic; color: #c8780a; font-weight: 500; }
+  p { margin: 0 0 9pt; }
+  strong { font-weight: 500; color: #15201f; }
+  small { font-size: 8.5pt; color: #4a5957; }
+  a { color: #0d5c63; }
+
+  .eyebrow {
+    font-size: 9pt;
+    color: #0d5c63;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+    margin-bottom: 14pt;
+    display: inline-block;
+  }
+
+  /* ─────────── COVER PAGE ─────────── */
+  .cover {
+    page: cover;
+    width: 8.5in;
+    height: 11in;
+    background: #0a3d42;
+    color: #faf8f3;
+    padding: 1.2in 0.95in;
+    box-sizing: border-box;
+    page-break-after: always;
+    position: relative;
+  }
+  .cover-mark {
+    margin-bottom: 80pt;
+  }
+  .cover-brand-lockup {
+    width: 200pt;
+    max-width: 88%;
+    height: auto;
+    display: block;
+  }
+
+  .cover-eyebrow {
+    font-size: 10pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #e8a043;
+    font-weight: 500;
+    margin-bottom: 36pt;
+  }
+  .cover h1 {
+    color: #faf8f3;
+    font-size: 44pt;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0 0 28pt;
+    max-width: 6.5in;
+  }
+  .cover h1 em { color: #e8a043; }
+  .cover-sub {
+    font-family: 'Lora', Georgia, serif;
+    font-style: italic;
+    font-size: 17pt;
+    color: rgba(250, 248, 243, 0.85);
+    line-height: 1.4;
+    max-width: 5.5in;
+  }
+  .cover-bottom {
+    position: absolute;
+    bottom: 0.95in;
+    left: 0.95in;
+    right: 0.95in;
+    border-top: 0.5pt solid rgba(250, 248, 243, 0.25);
+    padding-top: 18pt;
+    font-size: 9pt;
+    color: rgba(250, 248, 243, 0.7);
+    display: flex;
+    justify-content: space-between;
+  }
+  .cover-bottom strong { color: #faf8f3; font-weight: 500; }
+
+  /* ─────────── INTRO / WHY THIS GUIDE EXISTS ─────────── */
+  .intro-callout {
+    background: #f5f3ee;
+    border-left: 3pt solid #c8780a;
+    padding: 12pt 16pt;
+    margin: 14pt 0 18pt;
+    font-family: 'Lora', Georgia, serif;
+    font-style: italic;
+    font-size: 11pt;
+    color: #15201f;
+    line-height: 1.55;
+  }
+
+  /* ─────────── SCIENCE BRIEFING ─────────── */
+  .stat-row {
+    display: flex;
+    gap: 14pt;
+    margin: 14pt 0 18pt;
+  }
+  .stat-card {
+    flex: 1;
+    background: #f5f3ee;
+    border-radius: 4pt;
+    padding: 14pt 14pt 12pt;
+  }
+  .stat-num {
+    font-family: 'Lora', serif;
+    font-size: 22pt;
+    color: #c8780a;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 6pt;
+  }
+  .stat-label {
+    font-size: 9pt;
+    color: #4a5957;
+    line-height: 1.45;
+  }
+
+  .citation {
+    font-size: 8.5pt;
+    color: #4a5957;
+    font-style: italic;
+    line-height: 1.4;
+    margin-top: 4pt;
+  }
+
+  /* ─────────── COMPARISON TABLE ─────────── */
+  table.compare {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12pt 0 18pt;
+    font-size: 10pt;
+  }
+  .compare th, .compare td {
+    padding: 10pt 12pt;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 0.5pt solid #d8d3c7;
+  }
+  .compare thead th {
+    background: #0a3d42;
+    color: #faf8f3;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 11pt;
+  }
+  .compare thead th:first-child {
+    background: transparent;
+    color: #4a5957;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+  }
+  .compare tbody tr:nth-child(even) td { background: #faf8f3; }
+  .compare td:first-child {
+    color: #4a5957;
+    font-size: 9.5pt;
+    width: 28%;
+  }
+  .compare td em {
+    font-family: 'Lora', serif;
+    color: #0d5c63;
+    font-style: italic;
+  }
+
+  /* ─────────── QUESTIONS SECTION ─────────── */
+  .question-block {
+    margin: 18pt 0 22pt;
+    page-break-inside: avoid;
+  }
+  .q-num {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: #c8780a;
+    font-size: 13pt;
+    font-weight: 500;
+    margin-right: 8pt;
+  }
+  .question-block h3 {
+    font-family: 'Lora', serif;
+    color: #0a3d42;
+    font-size: 14pt;
+    margin: 0 0 8pt;
+    font-weight: 500;
+  }
+  .answer-rubric {
+    background: #ecf5f5;
+    border-radius: 3pt;
+    padding: 9pt 12pt;
+    margin: 6pt 0;
+    font-size: 9.5pt;
+    color: #15201f;
+    line-height: 1.5;
+  }
+  .answer-rubric .rubric-label {
+    font-size: 8pt;
+    color: #0d5c63;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 3pt;
+  }
+  .doctor-said {
+    border: 0.5pt solid #d8d3c7;
+    border-radius: 3pt;
+    padding: 8pt 12pt;
+    margin-top: 8pt;
+    min-height: 36pt;
+    font-size: 9pt;
+    color: #4a5957;
+    font-style: italic;
+  }
+  .doctor-said .said-label {
+    font-size: 7.5pt;
+    color: #4a5957;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    font-style: normal;
+    display: block;
+    margin-bottom: 4pt;
+  }
+  .doctor-said .lines { color: #d8d3c7; }
+
+  /* ─────────── REFERENCES PAGE ─────────── */
+  .ref-list {
+    list-style: none;
+    padding: 0;
+    margin: 12pt 0 0;
+    counter-reset: ref-counter;
+  }
+  .ref-list li {
+    counter-increment: ref-counter;
+    padding: 5pt 0 5pt 24pt;
+    border-bottom: 0.5pt solid #ebe7dc;
+    position: relative;
+    font-size: 8.5pt;
+    line-height: 1.5;
+    color: #4a5957;
+  }
+  .ref-list li::before {
+    content: counter(ref-counter, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 5pt;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: #c8780a;
+    font-weight: 500;
+    font-size: 9.5pt;
+  }
+  .ref-list li strong { color: #15201f; }
+  .ref-list li em { color: #0d5c63; }
+
+  /* ─────────── CLOSING / CONTACT PAGE ─────────── */
+  .closing {
+    background: #f5f3ee;
+    padding: 28pt 32pt;
+    border-radius: 4pt;
+    margin-top: 22pt;
+  }
+  .closing h2 { margin-top: 0; }
+  .closing-grid {
+    display: flex;
+    gap: 24pt;
+    margin-top: 18pt;
+  }
+  .closing-col {
+    flex: 1;
+  }
+  .closing-col-label {
+    font-size: 8.5pt;
+    color: #4a5957;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 4pt;
+    font-weight: 500;
+  }
+  .closing-col-val {
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    color: #0a3d42;
+    line-height: 1.4;
+  }
+
+  /* Page breaks */
+  .pb { page-break-before: always; }
+  .no-break { page-break-inside: avoid; }
+
+  /* Disclaimer */
+  .disclaimer {
+    margin-top: 18pt;
+    padding: 12pt 14pt;
+    background: #faf8f3;
+    border: 0.5pt solid #ebe7dc;
+    border-radius: 3pt;
+    font-size: 8pt;
+    line-height: 1.55;
+    color: #4a5957;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ COVER PAGE ═══════════════ -->
+<section class="cover">
+  <div class="cover-mark">
+    <img class="cover-brand-lockup" src="brand/logos/07-stacked-reversed.svg" alt="Valley Joint Pain Center" width="400" height="400" decoding="async" />
+  </div>
+
+  <div class="cover-eyebrow">A patient resource</div>
+  <h1>Talking to your doctor about <em>non-surgical</em> knee pain options.</h1>
+  <p class="cover-sub">A practical guide to the conversation, the science, and the questions worth asking — before you commit to surgery you may not need.</p>
+
+  <div class="cover-bottom">
+    <div>Prepared by Valley Joint Pain Center<br>Van Nuys, California</div>
+    <div style="text-align: right;"><strong>2026 Edition</strong><br>Reviewed by Dr. Sabeen Dhand, MD</div>
+  </div>
+</section>
+
+
+<!-- ═══════════════ PAGE 2 — WHY THIS GUIDE EXISTS ═══════════════ -->
+<section>
+  <div class="eyebrow">Why this guide exists</div>
+  <h2>You may know more about your options than your doctor does.</h2>
+
+  <p>If you're reading this, you've probably been dealing with knee pain for a while. You may have tried physical therapy, anti-inflammatory medication, knee braces, cortisone injections, or some combination of all of them. You may have been told — directly or by implication — that knee replacement is the next step.</p>
+
+  <p>It might be. For some patients, joint replacement is the right call.</p>
+
+  <p>But there's also a category of <strong>minimally invasive, image-guided procedures</strong> performed by interventional radiologists — including <strong>Genicular Artery Embolization (GAE)</strong>, <strong>radiofrequency ablation (RFA)</strong>, and <strong>image-guided injections</strong> — that many patients are never told about. Not because they're hiding from you, but because:</p>
+
+  <ul style="margin: 10pt 0 14pt 22pt;">
+    <li style="margin-bottom: 6pt;"><strong>Many primary care doctors</strong> haven't received specific continuing education on these procedures because they're relatively new in widespread practice.</li>
+    <li style="margin-bottom: 6pt;"><strong>Orthopedic surgeons</strong> typically know about GAE but may not routinely discuss it — partly because it's outside their scope of practice, and partly because their incentive structures favor procedures they perform themselves.</li>
+    <li style="margin-bottom: 6pt;"><strong>Interventional radiology</strong> is a specialty most patients have never heard of, even though the field has been performing image-guided procedures for over four decades.</li>
+  </ul>
+
+  <p>This guide is designed to help you have a more informed conversation with whichever doctor is helping you make this decision. It includes the published evidence on GAE, an honest side-by-side with knee replacement, and a list of specific questions you can ask. There's space throughout for you to write down what your doctor says.</p>
+
+  <div class="intro-callout">
+    The goal of this guide isn't to push you toward any specific procedure — including ours. It's to help you make an informed decision. If knee replacement is the right answer for you after a careful conversation, this guide will have done its job.
+  </div>
+</section>
+
+
+<!-- ═══════════════ PAGE 3 — THE SCIENCE BRIEFING ═══════════════ -->
+<section class="pb">
+  <div class="eyebrow">The science briefing  ·  Part one</div>
+  <h2>What GAE is, and how it works.</h2>
+
+  <p>Genicular Artery Embolization is an outpatient, image-guided procedure that targets the <em>cause</em> of chronic knee pain in osteoarthritis — not just the symptom.</p>
+
+  <p>Here's the underlying biology, in plain language: in an osteoarthritic knee, the lining of the joint (the <em>synovium</em>) becomes chronically inflamed. To sustain that inflammation, the body grows new abnormal blood vessels, called <em>neovessels</em>, that feed into the joint. These neovessels carry inflammatory cells, pain signals, and the nerve fibers that produce the persistent ache of arthritis.<sup>1, 2</sup></p>
+
+  <p>GAE works upstream of all that. Through a small catheter inserted at the wrist or upper thigh, an interventional radiologist navigates to the genicular arteries (the small blood vessels supplying the knee joint capsule) and delivers microscopic particles that close off the abnormal vessels. The cartilage damage isn't reversed — but the chronic inflammation that drives the pain has its supply line cut.<sup>1</sup></p>
+
+  <h3>What the published research shows</h3>
+
+  <div class="stat-row">
+    <div class="stat-card">
+      <div class="stat-num">47.4<span style="font-size: 14pt;">%</span></div>
+      <div class="stat-label">of patients had ≥50% pain reduction at 24 months in the most recent prospective IDE trial<sup>3</sup></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">72<span style="font-size: 14pt;">%</span></div>
+      <div class="stat-label">of patients who responded at 12 months had a sustained response at 24 months<sup>3</sup></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">~36<span style="font-size: 14pt;">%</span></div>
+      <div class="stat-label">average reduction in pain score (VAS) at 2 years follow-up in the GENESIS trial<sup>4</sup></div>
+    </div>
+  </div>
+
+  <p>The pattern across multiple studies is consistent: most patients who respond to GAE see meaningful, durable pain reduction lasting 1 to 4 years.<sup>5</sup> The procedure is not a cure — it's a way to manage pain and inflammation in a joint that already has osteoarthritis. For some patients it delays joint replacement by years; for others, it provides enough relief that surgery becomes unnecessary.</p>
+
+  <h3>What about safety?</h3>
+
+  <p>Across published series, the most common side effects are minor and self-limiting: temporary skin discoloration over the knee (resolves on its own in weeks), mild groin or wrist soreness at the catheter site, and rare puncture-site bruising.<sup>4, 5</sup> Significant complications are uncommon — under 2% in most published series.<sup>5</sup> No long-term adverse events have been observed at the 2-year follow-up window in the most recent IDE trial.<sup>3</sup></p>
+</section>
+
+
+<!-- ═══════════════ PAGE 4 — THE COMPARISON ═══════════════ -->
+<section class="pb">
+  <div class="eyebrow">The science briefing  ·  Part two</div>
+  <h2>An honest side-by-side: GAE vs. knee replacement.</h2>
+
+  <p>This isn't a sales pitch. Both procedures help patients. They're appropriate for different situations, and both have real trade-offs. Here's the data — with citations.</p>
+
+  <table class="compare">
+    <thead>
+      <tr>
+        <th>Comparison</th>
+        <th>GAE</th>
+        <th>Total Knee Replacement (TKR)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Type of intervention</td>
+        <td>Minimally invasive, image-guided<br><em>No incision</em></td>
+        <td>Major orthopedic surgery<br><em>Joint surfaces replaced</em></td>
+      </tr>
+      <tr>
+        <td>Anesthesia</td>
+        <td>Local + light IV sedation</td>
+        <td>General or spinal anesthesia</td>
+      </tr>
+      <tr>
+        <td>Hospital stay</td>
+        <td><em>None</em> — outpatient</td>
+        <td>1–3 nights typical<sup>6</sup></td>
+      </tr>
+      <tr>
+        <td>Time to walking unaided</td>
+        <td>Same day</td>
+        <td>3–4 weeks<sup>7</sup></td>
+      </tr>
+      <tr>
+        <td>Time to return to work</td>
+        <td>2–3 days</td>
+        <td>~12.9 weeks (mean)<sup>8</sup></td>
+      </tr>
+      <tr>
+        <td>Reverses cartilage damage?</td>
+        <td><em>No</em> — addresses inflammation</td>
+        <td>N/A — replaces joint surfaces</td>
+      </tr>
+      <tr>
+        <td>Persistent pain after procedure</td>
+        <td>~30–50% don't respond fully<sup>3</sup></td>
+        <td>~12–22% have ongoing pain at 12+ months<sup>9, 10</sup></td>
+      </tr>
+      <tr>
+        <td>Patient dissatisfaction rate</td>
+        <td>Limited long-term satisfaction data</td>
+        <td>~10% across 95K-patient meta-analysis<sup>11</sup></td>
+      </tr>
+      <tr>
+        <td>Repeatable if needed?</td>
+        <td>Yes — no limit on repeat procedures</td>
+        <td>Revision surgery is more complex<br>~8.4% revision rate over time<sup>12</sup></td>
+      </tr>
+      <tr>
+        <td>Best candidate</td>
+        <td>Mild–moderate OA, not yet surgical</td>
+        <td>End-stage OA, surgical candidates</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>What this comparison actually means</h3>
+
+  <p>For a patient with mild-to-moderate knee osteoarthritis (Kellgren-Lawrence grade 2–3), GAE can offer meaningful pain relief without the recovery, surgical risk, or commitment of a knee replacement. About half of these patients see lasting benefit at 2 years. The other half can still proceed to TKR later — GAE doesn't burn any bridges.</p>
+
+  <p>For a patient with end-stage osteoarthritis (Kellgren-Lawrence grade 4) where the cartilage is essentially gone, GAE is much less likely to help. TKR remains the right answer for those patients. The hardest decision is in the middle — and that's exactly the conversation this guide is designed to support.</p>
+</section>
+
+
+<!-- ═══════════════ PAGE 5-6 — THE QUESTIONS ═══════════════ -->
+<section class="pb">
+  <div class="eyebrow">Questions to ask  ·  Bring this to your appointment</div>
+  <h2>Eight questions worth asking your doctor.</h2>
+
+  <p>Use the space below each question to write down what your doctor says. Their answer matters less than the conversation it starts. If a doctor refuses to discuss any of these, that itself is information.</p>
+
+  <div class="question-block">
+    <h3><span class="q-num">01</span> Based on my imaging, what's my Kellgren-Lawrence grade?</h3>
+    <div class="answer-rubric">
+      <span class="rubric-label">What a thorough answer sounds like</span>
+      The KL scale runs from 0 (no OA) to 4 (severe). It's based on X-ray findings — joint space narrowing, bone changes, and bone spurs. Your doctor should be able to give you a specific grade for each affected knee. This number heavily influences which treatments are appropriate.
+    </div>
+    <div class="doctor-said">
+      <span class="said-label">My doctor said</span>
+      <span class="lines">_____________________________________________________________________________________<br><br>_____________________________________________________________________________________</span>
+    </div>
+  </div>
+
+  <div class="question-block">
+    <h3><span class="q-num">02</span> What non-surgical options have I not yet tried?</h3>
+    <div class="answer-rubric">
+      <span class="rubric-label">What a thorough answer sounds like</span>
+      A complete answer should mention image-guided injections (with ultrasound or fluoroscopy), nerve ablation procedures like genicular RFA, and embolization procedures like GAE. If "we've tried everything" is the answer, gently ask about each of these specifically.
+    </div>
+    <div class="doctor-said">
+      <span class="said-label">My doctor said</span>
+      <span class="lines">_____________________________________________________________________________________<br><br>_____________________________________________________________________________________</span>
+    </div>
+  </div>
+
+  <div class="question-block">
+    <h3><span class="q-num">03</span> Are you familiar with Genicular Artery Embolization?</h3>
+    <div class="answer-rubric">
+      <span class="rubric-label">What a thorough answer sounds like</span>
+      A confident "yes" with some specifics about the procedure suggests your doctor is up to date. "I've heard of it but don't know the details" is honest and worth a follow-up. "Never heard of it" is also fine — it's a relatively new procedure — but it means you should consider seeking a second opinion from an interventional radiologist.
+    </div>
+    <div class="doctor-said">
+      <span class="said-label">My doctor said</span>
+      <span class="lines">_____________________________________________________________________________________<br><br>_____________________________________________________________________________________</span>
+    </div>
+  </div>
+
+  <div class="question-block">
+    <h3><span class="q-num">04</span> Could I be a candidate for GAE based on my specific situation?</h3>
+    <div class="answer-rubric">
+      <span class="rubric-label">What a thorough answer sounds like</span>
+      Good candidates typically have mild-to-moderate OA (KL 2–3), pain that hasn't responded to conservative care, and are either not ready for or not candidates for joint replacement. Severe (KL 4) OA is generally not a great fit. A thoughtful doctor should walk you through where <em>you</em> fit in that picture.
+    </div>
+    <div class="doctor-said">
+      <span class="said-label">My doctor said</span>
+      <span class="lines">_____________________________________________________________________________________<br><br>_____________________________________________________________________________________</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════ PAGE 6 — QUESTIONS CONTINUED ═══════════════ -->
+<section class="pb">
+  <div class="question-block">
+    <h3><span class="q-num">05</span> What are the actual risks I'd face if I proceed with knee replacement?</h3>
+    <div class="answer-rubric">
+      <span class="rubric-label">What a thorough answer sounds like</span>
+      Honest answers will include: ~10% patient dissatisfaction across published studies, 12–22% rate of persistent pain at 12+ months, infection risk (rare but serious), blood clots, recovery time of 3–6 months, and the possibility of revision surgery later in life. A doctor who waves these off as "minimal" isn't giving you the full picture.
+    </div>
+    <div class="doctor-said">
+      <span class="said-label">My doctor said</span>
+      <span class="lines">_____________________________________________________________________________________<br><br>_____________________________________________________________________________________</span>
+    </div>
+  </div>
+
+  <div class="question-block">
+    <h3><span class="q-num">06</span> If I tried GAE first and it didn't work, would I still be a candidate for knee replacement later?</h3>
+    <div class="answer-rubric">
+      <span class="rubric-label">What a thorough answer sounds like</span>
+      The honest answer is yes. GAE doesn't change the structure of the joint and doesn't preclude future surgery. Patients in published trials who didn't respond to GAE went on to have successful joint replacements without complications.<sup>4</sup> If your doctor says "GAE will compromise your future surgery," ask them to cite a source.
+    </div>
+    <div class="doctor-said">
+      <span class="said-label">My doctor said</span>
+      <span class="lines">_____________________________________________________________________________________<br><br>_____________________________________________________________________________________</span>
+    </div>
+  </div>
+
+  <div class="question-block">
+    <h3><span class="q-num">07</span> How urgent is this decision? What happens if I wait 6 months?</h3>
+    <div class="answer-rubric">
+      <span class="rubric-label">What a thorough answer sounds like</span>
+      For most patients with osteoarthritis pain, this is not a 911. The disease progresses slowly — often over years. Taking 3–6 months to explore options, get second opinions, and try less invasive approaches first will rarely cost you anything clinically. If your doctor says you need to decide in the next two weeks, ask why specifically.
+    </div>
+    <div class="doctor-said">
+      <span class="said-label">My doctor said</span>
+      <span class="lines">_____________________________________________________________________________________<br><br>_____________________________________________________________________________________</span>
+    </div>
+  </div>
+
+  <div class="question-block">
+    <h3><span class="q-num">08</span> Can you refer me to an interventional radiologist for a second opinion?</h3>
+    <div class="answer-rubric">
+      <span class="rubric-label">What a thorough answer sounds like</span>
+      A confident, secure doctor will say yes — even if they ultimately recommend surgery. Pushback or discouragement here is a yellow flag. You don't need a referral to see an interventional radiologist (they accept self-referrals at most practices), but a doctor's willingness to support second opinions tells you a lot about their relationship with your care.
+    </div>
+    <div class="doctor-said">
+      <span class="said-label">My doctor said</span>
+      <span class="lines">_____________________________________________________________________________________<br><br>_____________________________________________________________________________________</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════ PAGE 7 — REFERENCES ═══════════════ -->
+<section class="pb">
+  <div class="eyebrow">References</div>
+  <h2>Where the numbers in this guide come from.</h2>
+
+  <p>Every statistic cited in this guide comes from a peer-reviewed publication or a major joint registry. If your doctor questions any of these numbers, you have the citations.</p>
+
+  <ol class="ref-list">
+    <li><strong>Bagla S, et al.</strong> Genicular artery embolization for osteoarthritis-related knee pain. <em>Journal of Vascular and Interventional Radiology</em>, 2020.</li>
+    <li><strong>Bonnet CS, Walsh DA.</strong> Osteoarthritis, angiogenesis and inflammation. <em>Rheumatology</em>, 2005;44(1):7–16.</li>
+    <li><strong>Khurana B, et al.</strong> Genicular artery embolization for treatment of symptomatic knee osteoarthritis: 2-year outcomes from a prospective IDE trial. <em>Journal of Vascular and Interventional Radiology</em>, 2024 (PubMed 39322180). <em>Primary endpoint: 47.4% of patients showed ≥50% WOMAC reduction at 24 months.</em></li>
+    <li><strong>Little MW, et al.</strong> Genicular artery embolisation in patients with osteoarthritis of the knee (GENESIS): long-term results using permanent microspheres. <em>CardioVascular and Interventional Radiology</em>, 2024 (Springer Nature). <em>Mean VAS score improved from 58.6 to 37.7 at 2 years (n=46).</em></li>
+    <li><strong>Heller JG, et al.</strong> Genicular artery embolization for osteoarthritis-related knee pain: a systematic review and qualitative analysis of clinical outcomes. <em>Cardiovascular and Interventional Radiology</em>, 2020 (PubMed 33135117).</li>
+    <li><strong>Healthline, AAHKS-sourced overview.</strong> Total knee replacement recovery timeline. American Association of Hip and Knee Surgeons clinical guidance, 2024.</li>
+    <li><strong>Healthline / AAHKS.</strong> 12-week post-TKR recovery course. Most patients walk with assistance for 3–4 weeks.</li>
+    <li><strong>Tilbury C, et al.</strong> Return to work after total hip and knee arthroplasty: results from a clinical study. <em>Rheumatology International</em>. <em>Mean time to RTW: 12.9 weeks for TKA (n=64).</em></li>
+    <li><strong>Beswick AD, et al.</strong> What proportion of people have long-term pain after total hip or knee replacement? Updated systematic review and meta-analysis. <em>BMJ Open</em>, 2025. <em>~22% report pain at 3 months; 12–15% at 1–2 years.</em></li>
+    <li><strong>Wylde V, et al.</strong> Persistent post-surgical pain after TKR. <em>Pain</em>, 2023. <em>~20% incidence after bone and joint surgery.</em></li>
+    <li><strong>Kahlenberg CA, et al.</strong> Patient satisfaction after total knee replacement: systematic review of 95,560 patients across 208 studies. <em>HSS Journal</em>, 2018. <em>Average dissatisfaction rate: 10%.</em></li>
+    <li><strong>Klemt C, et al.</strong> Big data analysis of complications, costs, and length of stay in revision TKA. <em>Knee Surgery, Sports Traumatology, Arthroscopy</em>, 2024. <em>8.4% of TKA patients underwent revision surgery in the studied period.</em></li>
+  </ol>
+
+  <div class="disclaimer">
+    <strong>Important:</strong> This guide is intended for educational purposes only and does not constitute medical advice. Statistics are drawn from published clinical research and may not apply directly to your individual situation. Treatment decisions should always be made in consultation with qualified physicians who have reviewed your imaging and medical history. Valley Joint Pain Center provides this resource as a public service to support more informed patient-physician conversations.
+  </div>
+</section>
+
+
+<!-- ═══════════════ PAGE 8 — CLOSING / CONTACT ═══════════════ -->
+<section class="pb">
+  <div class="eyebrow">A final note</div>
+  <h2>Whatever you decide, decide it knowing your options.</h2>
+
+  <p>Whether you ultimately choose GAE, joint replacement, continued conservative care, or something else entirely — the goal of this guide is the same: to help you walk into your next appointment as an informed participant in your own care, not a passive recipient of someone else's plan.</p>
+
+  <p>If you'd like to learn more about whether you might be a candidate for GAE or another minimally invasive option we offer, you have a few options:</p>
+
+  <div class="closing">
+    <h2 style="margin-top: 0; font-size: 17pt;">Connecting with our practice</h2>
+    <p style="margin-bottom: 12pt;">Valley Joint Pain Center is an interventional radiology practice in Van Nuys focused on non-surgical solutions to chronic joint pain. There's no charge for an initial consultation, no obligation, and no insurance required to start the conversation.</p>
+
+    <div class="closing-grid">
+      <div class="closing-col">
+        <div class="closing-col-label">Online assessment</div>
+        <div class="closing-col-val">valleyjointpain.com<br>/assessment</div>
+      </div>
+      <div class="closing-col">
+        <div class="closing-col-label">Phone</div>
+        <div class="closing-col-val">(818) 418-8165</div>
+      </div>
+      <div class="closing-col">
+        <div class="closing-col-label">Office</div>
+        <div class="closing-col-val">14411 Hamlin St<br>Van Nuys, CA 91401</div>
+      </div>
+    </div>
+  </div>
+
+  <p style="margin-top: 18pt; font-size: 9.5pt; color: #4a5957; line-height: 1.55;">This guide was prepared by Valley Joint Pain Center and reviewed for clinical accuracy by <strong style="color: #15201f;">Dr. Sabeen Dhand, MD</strong> — board-certified interventional radiologist, Northwestern-trained, Assistant Clinical Professor at the UCLA School of Medicine.</p>
+</section>
+
+</body>
+</html>

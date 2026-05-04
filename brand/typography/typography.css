@@ -1,0 +1,98 @@
+/* ==============================================
+   Valley Joint Pain Center — Typography System
+   v1.0
+   ============================================== */
+
+/* IMPORTS — Google Fonts (free, open source) */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  /* FONT FAMILIES */
+  --vjp-font-display: 'Lora', Georgia, serif;
+  --vjp-font-body:    'DM Sans', -apple-system, system-ui, sans-serif;
+
+  /* TYPE SCALE — all values are size / line-height */
+  --vjp-h1: 3.25rem / 1.05;   /* 52px — hero headlines */
+  --vjp-h2: 2.5rem  / 1.15;   /* 40px — section headlines */
+  --vjp-h3: 1.5rem  / 1.3;    /* 24px — subsection */
+  --vjp-h4: 1.25rem / 1.4;    /* 20px — card titles */
+  --vjp-body-lg:   1.125rem / 1.65;  /* 18px — hero subhead */
+  --vjp-body:      1rem     / 1.6;   /* 16px — default body */
+  --vjp-body-sm:   0.875rem / 1.55;  /* 14px — small body */
+  --vjp-caption:   0.75rem  / 1.5;   /* 12px — captions, footnotes */
+  --vjp-eyebrow:   0.8125rem / 1.4;  /* 13px — uppercase labels */
+}
+
+/* ==============================================
+   USAGE
+   ----------------------------------------------
+   LORA (serif):
+     Headlines, hero copy, doctor name, testimonials,
+     large numerical stats, italics for emphasis.
+     Weights: 400, 500, italic.
+
+   DM SANS (sans):
+     Body text, navigation, buttons, forms, labels,
+     footnotes, all UI elements.
+     Weights: 300, 400, 500.
+
+   THE ITALIC RULE:
+     The italic Lora is reserved for emphasis moments —
+     "Joint Pain" in the wordmark, key phrases in
+     headlines like "without the surgery." Use it
+     sparingly. It loses meaning if overused.
+   ============================================== */
+
+/* HEADLINES */
+h1, .vjp-h1 {
+  font-family: var(--vjp-font-display);
+  font-weight: 500;
+  font-size: clamp(2.5rem, 5.5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--vjp-teal-900);
+}
+
+h2, .vjp-h2 {
+  font-family: var(--vjp-font-display);
+  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--vjp-teal-900);
+}
+
+h3, .vjp-h3 {
+  font-family: var(--vjp-font-display);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--vjp-teal-900);
+}
+
+/* BODY */
+body, .vjp-body {
+  font-family: var(--vjp-font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--vjp-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* EYEBROW LABEL — for section headers */
+.vjp-eyebrow {
+  font-family: var(--vjp-font-body);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--vjp-teal-700);
+}
+
+/* ITALIC ACCENT — for emphasis within headlines */
+.vjp-italic-accent {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--vjp-amber);
+}

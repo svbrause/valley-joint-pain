@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 600" width="1050" height="600">
+  <title>Valley Joint Pain Center business card — back</title>
+
+  <rect width="1050" height="600" fill="#0a3d42"/>
+
+  <g transform="translate(525, 230)">
+    <path d="M -10 -55 Q -55 -55 -55 -10 L -55 10 Q -55 55 -10 55" stroke="#faf8f3" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 10 -55 Q 55 -55 55 -10 L 55 10 Q 55 55 10 55" stroke="#faf8f3" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="10" fill="#e8a043"/>
+  </g>
+
+  <text x="525" y="380" text-anchor="middle" font-family="Lora, Georgia, serif" font-style="italic" font-size="34" fill="rgba(250,248,243,0.85)">Knee pain relief,</text>
+  <text x="525" y="420" text-anchor="middle" font-family="Lora, Georgia, serif" font-style="italic" font-size="34" fill="rgba(250,248,243,0.85)">without the surgery.</text>
+
+  <text x="525" y="510" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-weight="500" font-size="13" fill="rgba(250,248,243,0.5)" letter-spacing="3">VALLEYJOINTPAIN.COM</text>
+</svg>

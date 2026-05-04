@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>Valley Joint Pain Center — social share card</title>
+  <desc>Open Graph image for social media share previews.</desc>
+
+  <defs>
+    <radialGradient id="glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#c8780a" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#c8780a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0a3d42"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Mark, top-left -->
+  <g transform="translate(90, 90)">
+    <path d="M 0 -22 Q -18 -22 -18 -4 L -18 4 Q -18 22 0 22" stroke="#faf8f3" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 8 -22 Q 26 -22 26 -4 L 26 4 Q 26 22 8 22" stroke="#faf8f3" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="4" cy="0" r="3.5" fill="#e8a043"/>
+  </g>
+  <line x1="135" y1="65" x2="135" y2="115" stroke="rgba(250,248,243,0.3)" stroke-width="0.5"/>
+  <text x="155" y="84" font-family="Lora, Georgia, serif" font-weight="500" font-size="22" fill="#faf8f3">Valley</text>
+  <text x="155" y="110" font-family="Lora, Georgia, serif" font-weight="400" font-style="italic" font-size="22" fill="#e8a043">Joint Pain</text>
+
+  <!-- Center headline -->
+  <text x="90" y="320" font-family="Lora, Georgia, serif" font-weight="500" font-size="76" fill="#faf8f3">Knee pain relief,</text>
+  <text x="90" y="410" font-family="Lora, Georgia, serif" font-weight="400" font-style="italic" font-size="76" fill="#e8a043">without the surgery.</text>
+
+  <!-- Subheading -->
+  <text x="90" y="475" font-family="DM Sans, system-ui, sans-serif" font-weight="400" font-size="22" fill="rgba(250,248,243,0.75)">A two-minute assessment to see if Genicular Artery Embolization</text>
+  <text x="90" y="505" font-family="DM Sans, system-ui, sans-serif" font-weight="400" font-size="22" fill="rgba(250,248,243,0.75)">could be your alternative to knee replacement surgery.</text>
+
+  <!-- URL strip -->
+  <line x1="90" y1="555" x2="1110" y2="555" stroke="rgba(250,248,243,0.15)" stroke-width="0.5"/>
+  <text x="90" y="590" font-family="DM Sans, system-ui, sans-serif" font-weight="500" font-size="14" fill="rgba(250,248,243,0.55)" letter-spacing="3">VALLEYJOINTPAIN.COM · SAN FERNANDO VALLEY</text>
+  <text x="1110" y="590" text-anchor="end" font-family="DM Sans, system-ui, sans-serif" font-weight="500" font-size="14" fill="rgba(250,248,243,0.55)" letter-spacing="3">BOARD-CERTIFIED · IR</text>
+</svg>

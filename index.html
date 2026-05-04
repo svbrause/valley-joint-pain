@@ -1,0 +1,3208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="brand/favicons/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link rel="apple-touch-icon" href="brand/favicons/apple-touch-icon.svg" />
+    <title>
+      Valley Joint Pain Center — Knee pain relief without surgery, San Fernando
+      Valley
+    </title>
+    <meta
+      name="description"
+      content="Non-surgical knee pain treatment in the San Fernando Valley. Genicular Artery Embolization (GAE) and other minimally invasive procedures. Located in Van Nuys, CA. Take our 2-minute assessment."
+    />
+
+    <!-- Schema.org structured data for local medical business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Valley Joint Pain Center",
+        "url": "https://valleyjointpain.com",
+        "telephone": "+18184188165",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "14411 Hamlin St",
+          "addressLocality": "Van Nuys",
+          "addressRegion": "CA",
+          "postalCode": "91401",
+          "addressCountry": "US"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:30",
+            "closes": "17:00"
+          }
+        ],
+        "medicalSpecialty": ["Interventional Radiology"],
+        "availableService": [
+          {
+            "@type": "MedicalProcedure",
+            "name": "Genicular Artery Embolization",
+            "alternateName": "GAE"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Radiofrequency Ablation",
+            "alternateName": "RFA"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Hip and Shoulder Embolization"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Image-Guided Joint Injections"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Prostate Artery Embolization",
+            "alternateName": "PAE"
+          }
+        ],
+        "areaServed": [
+          { "@type": "City", "name": "Van Nuys" },
+          { "@type": "City", "name": "Sherman Oaks" },
+          { "@type": "City", "name": "Encino" },
+          { "@type": "City", "name": "Studio City" },
+          { "@type": "City", "name": "Reseda" }
+        ]
+      }
+    </script>
+
+    <link rel="canonical" href="https://valleyjointpain.com/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="brand/colors/colors.css" />
+
+    <style>
+      /* Site tokens alias official brand package (`brand/colors/colors.css` --vjp-*) */
+      :root {
+        --teal-900: var(--vjp-teal-900, #0a3d42);
+        --teal-700: var(--vjp-teal-700, #0d5c63);
+        --teal-500: var(--vjp-teal-500, #1a8a93);
+        --teal-100: var(--vjp-teal-100, #d6ebed);
+        --teal-50: var(--vjp-teal-50, #ecf5f5);
+        --amber: var(--vjp-amber, #c8780a);
+        --amber-soft: var(--vjp-amber-soft, #e8a043);
+        --cloud: var(--vjp-cloud, #f5f3ee);
+        --bone: var(--vjp-bone, #faf8f3);
+        --ink: var(--vjp-ink, #15201f);
+        --ink-soft: var(--vjp-ink-soft, #4a5957);
+        --line: var(--vjp-line, #d8d3c7);
+        --line-soft: var(--vjp-line-soft, #ebe7dc);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        max-width: 100%;
+      }
+      body {
+        font-family:
+          "DM Sans",
+          -apple-system,
+          sans-serif;
+        background: var(--bone);
+        color: var(--ink);
+        line-height: 1.6;
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+        max-width: 100%;
+        overflow-wrap: break-word;
+      }
+      img,
+      video,
+      iframe,
+      svg {
+        max-width: 100%;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Lora", Georgia, serif;
+        font-weight: 500;
+        line-height: 1.15;
+        letter-spacing: -0.01em;
+        color: var(--teal-900);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 32px;
+      }
+
+      /* ─── NAV ─── */
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 200;
+        background: rgba(250, 248, 243, 0.92);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .logo-lockup {
+        height: 56px;
+        width: auto;
+        display: block;
+        flex-shrink: 0;
+      }
+      @media (min-width: 901px) {
+        .logo-lockup {
+          height: 72px;
+        }
+      }
+      footer .logo .logo-lockup {
+        height: 72px;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+      .nav-links a {
+        font-size: 14px;
+        color: var(--ink-soft);
+        transition: color 0.15s;
+      }
+      .nav-links a:hover {
+        color: var(--teal-700);
+      }
+      .nav-cta {
+        background: var(--teal-900);
+        color: var(--bone) !important;
+        padding: 10px 20px;
+        border-radius: 999px;
+        font-size: 14px;
+        font-weight: 500;
+        transition: background 0.15s;
+      }
+      .nav-cta:hover {
+        background: var(--teal-700);
+      }
+      .menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--teal-900);
+        padding: 8px;
+        margin: -8px -8px -8px 0;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        transition: background 0.15s;
+      }
+      .menu-btn:hover {
+        background: rgba(10, 61, 66, 0.06);
+      }
+      .menu-btn svg {
+        display: block;
+      }
+      .menu-btn .icon-close { display: none; }
+      .menu-btn[aria-expanded="true"] .icon-menu { display: none; }
+      .menu-btn[aria-expanded="true"] .icon-close { display: block; }
+      .nav-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: transparent;
+        z-index: 199;
+        cursor: pointer;
+      }
+      .nav-overlay.visible {
+        display: block;
+      }
+      .nav-drawer {
+        border-top: 1px solid var(--line-soft);
+        background: rgba(250, 248, 243, 0.97);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        animation: navDrawerSlideDown 0.2s ease;
+      }
+      .nav-drawer[hidden] {
+        display: none !important;
+      }
+      @keyframes navDrawerSlideDown {
+        from { opacity: 0; transform: translateY(-6px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .nav-drawer-inner {
+        padding-top: 8px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+      }
+      .nav-drawer-inner a {
+        font-size: 15px;
+        color: var(--ink-soft);
+        padding: 14px 0;
+        border-bottom: 1px solid var(--line-soft);
+        transition: color 0.15s;
+      }
+      .nav-drawer-inner a:last-child {
+        border-bottom: none;
+      }
+      .nav-drawer-inner a:hover {
+        color: var(--teal-700);
+      }
+      .nav-drawer-inner a.nav-drawer-cta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: stretch;
+        text-align: center;
+        margin: 12px 0 28px;
+        padding: 12px 20px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: var(--bone) !important;
+        background: var(--teal-900) !important;
+        border-radius: 999px;
+        border-bottom: none !important;
+        text-decoration: none;
+        transition: background 0.15s, color 0.15s;
+      }
+      .nav-drawer-inner a.nav-drawer-cta:hover {
+        background: var(--teal-700) !important;
+        color: var(--bone) !important;
+      }
+      @media (min-width: 901px) {
+        .nav-drawer {
+          display: none !important;
+        }
+      }
+
+      /* ─── HERO ─── */
+      .hero {
+        padding: 90px 0 110px;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 1fr;
+        gap: 80px;
+        align-items: center;
+      }
+      .hero-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+        color: var(--teal-700);
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-bottom: 28px;
+      }
+      .hero-eyebrow::before {
+        content: "";
+        width: 24px;
+        height: 1px;
+        background: var(--teal-700);
+      }
+      .hero h1 {
+        font-size: clamp(40px, 5.5vw, 64px);
+        line-height: 1.05;
+        margin-bottom: 28px;
+        letter-spacing: -0.02em;
+      }
+      .hero h1 em {
+        color: var(--amber);
+        font-style: italic;
+        font-weight: 500;
+      }
+      .hero-sub {
+        font-size: 18px;
+        color: var(--ink-soft);
+        line-height: 1.55;
+        max-width: 480px;
+        margin-bottom: 36px;
+      }
+      .hero-cta-row {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+      }
+      .btn-primary {
+        background: var(--amber);
+        color: var(--bone);
+        padding: 16px 28px;
+        border-radius: 999px;
+        font-size: 15px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        transition:
+          background 0.15s,
+          transform 0.15s;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: inherit;
+      }
+      .btn-primary:hover {
+        background: #b56908;
+        transform: translateY(-1px);
+      }
+      .btn-primary svg {
+        transition: transform 0.2s;
+      }
+      .btn-primary:hover svg {
+        transform: translateX(3px);
+      }
+      .btn-secondary {
+        color: var(--teal-900);
+        padding: 16px 8px;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: underline;
+        text-decoration-color: var(--line);
+        text-underline-offset: 6px;
+        transition: text-decoration-color 0.15s;
+      }
+      .btn-secondary:hover {
+        text-decoration-color: var(--teal-700);
+      }
+
+      .hero-trust {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        padding-top: 28px;
+        border-top: 1px solid var(--line-soft);
+      }
+      .trust-item {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .trust-num {
+        font-family: "Lora", serif;
+        font-size: 28px;
+        font-weight: 500;
+        color: var(--teal-900);
+        line-height: 1;
+      }
+      .trust-label {
+        font-size: 12px;
+        color: var(--ink-soft);
+      }
+
+      /* Hero visual: anatomical illustration */
+      .hero-visual {
+        position: relative;
+        aspect-ratio: 4 / 5;
+        background: var(--teal-50);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .hero-visual svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .hero-visual::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse at 30% 20%,
+          rgba(255, 255, 255, 0.5) 0%,
+          transparent 60%
+        );
+        pointer-events: none;
+        z-index: 1;
+      }
+      .visual-tag {
+        position: absolute;
+        background: var(--bone);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 8px 14px;
+        font-size: 12px;
+        color: var(--ink);
+        z-index: 2;
+        box-shadow: 0 2px 12px rgba(10, 61, 66, 0.08);
+      }
+      .visual-tag.t1 {
+        top: 18%;
+        right: -12%;
+      }
+      .visual-tag.t2 {
+        bottom: 22%;
+        left: -8%;
+      }
+      .visual-tag em {
+        font-family: "Lora", serif;
+        font-style: italic;
+        color: var(--teal-700);
+        margin-right: 4px;
+      }
+
+      .hero-bg-mark {
+        position: absolute;
+        top: -10%;
+        right: -8%;
+        font-family: "Lora", serif;
+        font-style: italic;
+        font-size: 380px;
+        color: var(--teal-50);
+        line-height: 1;
+        z-index: -1;
+        user-select: none;
+      }
+
+      /* ─── PROBLEM SECTION ─── */
+      .problem {
+        background: var(--cloud);
+        padding: 100px 0;
+        border-top: 1px solid var(--line-soft);
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .problem-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.6fr;
+        gap: 80px;
+      }
+      .section-eyebrow {
+        font-size: 13px;
+        color: var(--teal-700);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        font-weight: 500;
+      }
+      .problem h2 {
+        font-size: clamp(32px, 3.5vw, 44px);
+        line-height: 1.15;
+      }
+      .problem-list {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+      }
+      .problem-item {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        gap: 20px;
+        align-items: start;
+      }
+      .problem-num {
+        font-family: "Lora", serif;
+        font-style: italic;
+        font-size: 28px;
+        color: var(--amber);
+        font-weight: 400;
+        line-height: 1;
+      }
+      .problem-item h3 {
+        font-size: 19px;
+        margin-bottom: 8px;
+        color: var(--ink);
+      }
+      .problem-item p {
+        font-size: 15px;
+        color: var(--ink-soft);
+        line-height: 1.6;
+      }
+
+      /* ─── SOLUTION / GAE ─── */
+      .solution {
+        padding: 110px 0;
+        background: var(--bone);
+      }
+      .solution-header {
+        max-width: 720px;
+        margin: 0 auto 70px;
+        text-align: center;
+      }
+      .solution-header h2 {
+        font-size: clamp(36px, 4vw, 52px);
+        margin-bottom: 20px;
+      }
+      .solution-header p {
+        font-size: 17px;
+        color: var(--ink-soft);
+        line-height: 1.65;
+      }
+      .gae-feature {
+        background: var(--teal-900);
+        border-radius: 8px;
+        padding: 70px;
+        color: var(--bone);
+        position: relative;
+        overflow: hidden;
+      }
+      .gae-feature::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -20%;
+        width: 80%;
+        height: 200%;
+        background: radial-gradient(
+          ellipse,
+          rgba(200, 120, 10, 0.18) 0%,
+          transparent 60%
+        );
+        pointer-events: none;
+      }
+      .gae-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.3fr;
+        gap: 80px;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+      }
+      .gae-label {
+        display: inline-block;
+        font-size: 12px;
+        color: var(--amber-soft);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 18px;
+      }
+      .gae-feature h2 {
+        color: var(--bone);
+        font-size: clamp(32px, 3.5vw, 44px);
+        margin-bottom: 24px;
+      }
+      .gae-feature h2 em {
+        color: var(--amber-soft);
+        font-style: italic;
+      }
+      .gae-feature p {
+        color: rgba(250, 248, 243, 0.78);
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 32px;
+      }
+      .gae-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 40px;
+        padding: 32px 0;
+        border-top: 1px solid rgba(250, 248, 243, 0.15);
+        border-bottom: 1px solid rgba(250, 248, 243, 0.15);
+        margin-bottom: 32px;
+      }
+      .gae-stat-num {
+        font-family: "Lora", serif;
+        font-size: 36px;
+        color: var(--amber-soft);
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 6px;
+      }
+      .gae-stat-label {
+        font-size: 13px;
+        color: rgba(250, 248, 243, 0.7);
+        line-height: 1.4;
+      }
+      .gae-link {
+        color: var(--amber-soft);
+        font-weight: 500;
+        border-bottom: 1px solid var(--amber);
+        padding-bottom: 2px;
+        font-size: 15px;
+        transition: opacity 0.15s;
+      }
+      .gae-link:hover {
+        opacity: 0.8;
+      }
+
+      /* Procedure list */
+      .other-procedures {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: var(--line-soft);
+        border: 1px solid var(--line-soft);
+      }
+      .proc-card {
+        background: var(--bone);
+        padding: 32px 28px;
+        transition:
+          background 0.2s,
+          transform 0.15s;
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        position: relative;
+        cursor: pointer;
+      }
+      .proc-card::after {
+        content: "→";
+        position: absolute;
+        top: 28px;
+        right: 24px;
+        font-size: 18px;
+        color: var(--ink-soft);
+        opacity: 0;
+        transition:
+          opacity 0.2s,
+          transform 0.2s,
+          color 0.2s;
+      }
+      .proc-card:hover {
+        background: var(--cloud);
+      }
+      .proc-card:hover::after {
+        opacity: 1;
+        transform: translateX(3px);
+        color: var(--amber);
+      }
+      .proc-icon {
+        width: 36px;
+        height: 36px;
+        color: var(--teal-700);
+        margin-bottom: 18px;
+      }
+      .proc-card h3 {
+        font-size: 17px;
+        margin-bottom: 6px;
+        line-height: 1.3;
+      }
+      .proc-card-abbr {
+        font-size: 11px;
+        color: var(--amber);
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .proc-card p {
+        font-size: 14px;
+        color: var(--ink-soft);
+        line-height: 1.55;
+      }
+
+      /* ─── QUIZ CTA ─── */
+      .quiz-cta {
+        padding: 110px 0;
+        background: var(--cloud);
+        border-top: 1px solid var(--line-soft);
+        border-bottom: 1px solid var(--line-soft);
+        position: relative;
+        overflow: hidden;
+      }
+      .quiz-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 80px;
+        align-items: center;
+      }
+      .quiz-cta h2 {
+        font-size: clamp(36px, 4vw, 52px);
+        margin-bottom: 24px;
+        line-height: 1.1;
+      }
+      .quiz-cta h2 em {
+        color: var(--amber);
+        font-style: italic;
+      }
+      .quiz-cta > .wrap > .quiz-grid > div > p {
+        font-size: 17px;
+        color: var(--ink-soft);
+        line-height: 1.65;
+        margin-bottom: 36px;
+      }
+      .quiz-features {
+        list-style: none;
+        margin-bottom: 36px;
+      }
+      .quiz-features li {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 14px 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 15px;
+        color: var(--ink);
+      }
+      .quiz-features li:last-child {
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .check-icon {
+        width: 20px;
+        height: 20px;
+        background: var(--teal-700);
+        color: var(--bone);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        flex-shrink: 0;
+      }
+
+      /* Quiz preview card */
+      .quiz-preview {
+        background: var(--bone);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 36px;
+        box-shadow: 0 8px 40px rgba(10, 61, 66, 0.06);
+        position: relative;
+        transition:
+          border-color 0.2s,
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+      .quiz-preview:hover {
+        border-color: var(--teal-700);
+        transform: translateY(-2px);
+        box-shadow: 0 12px 50px rgba(10, 61, 66, 0.12);
+      }
+      .quiz-preview::before {
+        content: "";
+        position: absolute;
+        top: -12px;
+        left: 36px;
+        background: var(--amber);
+        color: var(--bone);
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        content: "Question 1 of 6";
+      }
+      .quiz-preview h3 {
+        font-family: "DM Sans", sans-serif;
+        font-size: 19px;
+        color: var(--ink);
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-top: 12px;
+      }
+      .quiz-options {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .quiz-option {
+        padding: 14px 18px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        font-size: 14px;
+        color: var(--ink);
+        background: var(--bone);
+        text-align: left;
+        font-family: inherit;
+      }
+      .quiz-option.selected {
+        border-color: var(--teal-700);
+        background: var(--teal-50);
+        color: var(--teal-900);
+        font-weight: 500;
+      }
+      .quiz-progress {
+        height: 3px;
+        background: var(--line-soft);
+        border-radius: 2px;
+        margin-top: 24px;
+        overflow: hidden;
+      }
+      .quiz-progress-fill {
+        height: 100%;
+        width: 25%;
+        background: var(--teal-700);
+        border-radius: 2px;
+        transition: width 0.3s;
+      }
+
+      /* ─── DOCTOR ─── */
+      .doctor {
+        padding: 110px 0;
+        background: var(--bone);
+      }
+      .doctor-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+        gap: 80px;
+        align-items: start;
+      }
+      .doctor-portrait-frame {
+        aspect-ratio: 4 / 5;
+        background: var(--teal-50);
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+      }
+      .doctor-portrait-frame svg,
+      .doctor-portrait-frame img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+      .doctor h2 {
+        font-size: clamp(32px, 3.5vw, 42px);
+        margin-bottom: 8px;
+      }
+      .doctor-title {
+        font-size: 14px;
+        color: var(--amber);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 28px;
+        font-weight: 500;
+      }
+      .doctor-bio {
+        font-size: 16px;
+        color: var(--ink-soft);
+        line-height: 1.75;
+        margin-bottom: 32px;
+      }
+      .doctor-bio p {
+        margin-bottom: 18px;
+      }
+      .credentials {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1px;
+        background: var(--line-soft);
+        border-top: 1px solid var(--line-soft);
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .cred {
+        background: var(--bone);
+        padding: 24px 0;
+      }
+      .cred-label {
+        font-size: 11px;
+        color: var(--ink-soft);
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        margin-bottom: 6px;
+      }
+      .cred-val {
+        font-family: "Lora", serif;
+        font-size: 17px;
+        color: var(--teal-900);
+      }
+
+      /* ─── LOCATION ─── */
+      .location {
+        padding: 110px 0;
+        background: var(--cloud);
+        border-top: 1px solid var(--line-soft);
+      }
+      .location-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.3fr;
+        gap: 70px;
+        align-items: stretch;
+      }
+      .location-info {
+        display: flex;
+        flex-direction: column;
+      }
+      .location h2 {
+        font-size: clamp(32px, 3.5vw, 44px);
+        margin-bottom: 8px;
+      }
+      .location h2 em {
+        color: var(--amber);
+        font-style: italic;
+      }
+      .location-tagline {
+        font-size: 17px;
+        color: var(--ink-soft);
+        line-height: 1.65;
+        margin-bottom: 36px;
+        max-width: 480px;
+      }
+      .location-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+        background: var(--line-soft);
+        border-top: 1px solid var(--line-soft);
+        border-bottom: 1px solid var(--line-soft);
+        margin-bottom: 36px;
+      }
+      .loc-detail {
+        background: var(--cloud);
+        padding: 22px 0;
+        padding-right: 16px;
+      }
+      .loc-detail:nth-child(even) {
+        padding-left: 24px;
+        padding-right: 0;
+      }
+      .loc-detail:nth-child(odd) {
+        padding-right: 24px;
+      }
+      .loc-detail-label {
+        font-size: 11px;
+        color: var(--ink-soft);
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        margin-bottom: 6px;
+        font-weight: 500;
+      }
+      .loc-detail-val {
+        font-family: "Lora", serif;
+        font-size: 17px;
+        color: var(--teal-900);
+        line-height: 1.4;
+      }
+      .loc-detail-val a {
+        color: var(--teal-900);
+        border-bottom: 1px solid var(--line);
+        transition:
+          color 0.15s,
+          border-color 0.15s;
+      }
+      .loc-detail-val a:hover {
+        color: var(--amber);
+        border-bottom-color: var(--amber);
+      }
+
+      .location-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--teal-900);
+        font-size: 15px;
+        font-weight: 500;
+        border-bottom: 1px solid var(--teal-700);
+        padding-bottom: 3px;
+        align-self: flex-start;
+        transition:
+          color 0.15s,
+          border-bottom-color 0.15s;
+      }
+      .location-cta:hover {
+        color: var(--amber);
+        border-bottom-color: var(--amber);
+      }
+      .location-cta svg {
+        transition: transform 0.2s;
+      }
+      .location-cta:hover svg {
+        transform: translateX(3px);
+      }
+
+      .location-map {
+        aspect-ratio: 4 / 3;
+        border-radius: 4px;
+        overflow: hidden;
+        border: 1px solid var(--line-soft);
+        background: var(--teal-50);
+        position: relative;
+        min-height: 380px;
+      }
+      .location-map iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+      }
+      .location-map-tag {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        background: var(--bone);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 8px 14px;
+        font-size: 12px;
+        color: var(--teal-900);
+        font-family: "Lora", serif;
+        font-style: italic;
+        z-index: 2;
+        box-shadow: 0 2px 12px rgba(10, 61, 66, 0.08);
+      }
+      .neighborhoods {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 28px;
+      }
+      .neighborhood-pill {
+        font-size: 12px;
+        color: var(--ink-soft);
+        background: var(--bone);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 5px 12px;
+      }
+
+      /* ─── TESTIMONIAL ─── */
+      .testimonial {
+        background: var(--teal-900);
+        color: var(--bone);
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+      }
+      .testimonial::before {
+        content: '"';
+        position: absolute;
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: "Lora", serif;
+        font-size: 480px;
+        color: rgba(200, 120, 10, 0.08);
+        font-style: italic;
+        line-height: 1;
+        pointer-events: none;
+      }
+      .testimonial-content {
+        max-width: 820px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      .testimonial-quote {
+        font-family: "Lora", serif;
+        font-style: italic;
+        font-size: clamp(24px, 2.6vw, 32px);
+        line-height: 1.4;
+        color: var(--bone);
+        margin-bottom: 36px;
+        font-weight: 400;
+      }
+      .testimonial-attr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+      }
+      .testimonial-avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--amber-soft), var(--amber));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--bone);
+        font-family: "Lora", serif;
+        font-size: 17px;
+        font-weight: 500;
+      }
+      .testimonial-name {
+        text-align: left;
+      }
+      .testimonial-name .n {
+        font-size: 15px;
+        color: var(--bone);
+        font-weight: 500;
+      }
+      .testimonial-name .l {
+        font-size: 13px;
+        color: rgba(250, 248, 243, 0.6);
+        margin-top: 2px;
+      }
+
+      /* ─── FAQ ─── */
+      .faq {
+        padding: 110px 0;
+        background: var(--bone);
+      }
+      .faq-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.6fr;
+        gap: 80px;
+      }
+      .faq h2 {
+        font-size: clamp(32px, 3.5vw, 44px);
+        line-height: 1.15;
+      }
+      .faq-list {
+        display: flex;
+        flex-direction: column;
+      }
+      .faq-item {
+        border-top: 1px solid var(--line-soft);
+        padding: 28px 0;
+      }
+      .faq-item:last-child {
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .faq-q {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: 500;
+        color: var(--ink);
+        font-family: inherit;
+        background: none;
+        border: none;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+      }
+      .faq-q:hover {
+        color: var(--teal-700);
+      }
+      .faq-toggle {
+        width: 24px;
+        height: 24px;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-left: 20px;
+        transition:
+          transform 0.2s,
+          background 0.2s,
+          border-color 0.2s;
+      }
+      .faq-item.open .faq-toggle {
+        transform: rotate(45deg);
+        background: var(--teal-700);
+        border-color: var(--teal-700);
+        color: var(--bone);
+      }
+      .faq-a {
+        max-height: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.3s,
+          margin-top 0.3s;
+        color: var(--ink-soft);
+        font-size: 15px;
+        line-height: 1.7;
+      }
+      .faq-item.open .faq-a {
+        max-height: 300px;
+        margin-top: 16px;
+      }
+
+      /* ─── FINAL CTA ─── */
+      .final-cta {
+        padding: 110px 0;
+        background: var(--cloud);
+        text-align: center;
+        border-top: 1px solid var(--line-soft);
+      }
+      .final-cta h2 {
+        font-size: clamp(40px, 5vw, 60px);
+        margin-bottom: 24px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.05;
+      }
+      .final-cta h2 em {
+        color: var(--amber);
+        font-style: italic;
+      }
+      .final-cta p {
+        font-size: 17px;
+        color: var(--ink-soft);
+        max-width: 540px;
+        margin: 0 auto 40px;
+      }
+
+      /* ─── FOOTER ─── */
+      footer {
+        background: var(--teal-900);
+        color: rgba(250, 248, 243, 0.7);
+        padding: 70px 0 30px;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        gap: 60px;
+        margin-bottom: 60px;
+      }
+      .footer-tag {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 1.6;
+        max-width: 280px;
+      }
+      .footer-col h4 {
+        color: var(--bone);
+        font-family: "DM Sans", sans-serif;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 18px;
+        font-weight: 500;
+      }
+      .footer-col a,
+      .footer-col p {
+        display: block;
+        color: rgba(250, 248, 243, 0.7);
+        font-size: 14px;
+        padding: 6px 0;
+        transition: color 0.15s;
+      }
+      .footer-col a:hover {
+        color: var(--amber-soft);
+      }
+      .footer-bottom {
+        padding-top: 30px;
+        border-top: 1px solid rgba(250, 248, 243, 0.12);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        color: rgba(250, 248, 243, 0.5);
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .footer-disclaimer {
+        background: rgba(0, 0, 0, 0.15);
+        margin-top: 30px;
+        padding: 20px 24px;
+        border-radius: 4px;
+        font-size: 12px;
+        line-height: 1.6;
+        color: rgba(250, 248, 243, 0.55);
+        max-width: 900px;
+      }
+
+      /* ─── LEAD MAGNET ─── */
+      .lead-magnet {
+        background: var(--teal-900);
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+      }
+      .lead-magnet::before {
+        content: "";
+        position: absolute;
+        top: -120px;
+        right: -120px;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: rgba(200, 120, 10, 0.07);
+        pointer-events: none;
+      }
+      .lm-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+      }
+      .lm-eyebrow {
+        font-size: 12px;
+        color: var(--amber-soft);
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .lm-eyebrow::before {
+        content: "";
+        width: 22px;
+        height: 1px;
+        background: var(--amber-soft);
+      }
+      .lead-magnet h2 {
+        font-family: "Lora", Georgia, serif;
+        font-size: clamp(30px, 3.5vw, 42px);
+        font-weight: 500;
+        color: var(--bone);
+        line-height: 1.15;
+        letter-spacing: -0.015em;
+        margin-bottom: 18px;
+      }
+      .lead-magnet h2 em {
+        color: var(--amber-soft);
+        font-style: italic;
+      }
+      .lm-desc {
+        font-size: 16px;
+        color: rgba(250, 248, 243, 0.78);
+        line-height: 1.65;
+        margin-bottom: 28px;
+      }
+      .lm-contents {
+        list-style: none;
+        margin-bottom: 36px;
+      }
+      .lm-contents li {
+        font-size: 14px;
+        color: rgba(250, 248, 243, 0.85);
+        padding: 9px 0;
+        border-bottom: 1px solid rgba(250, 248, 243, 0.1);
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        line-height: 1.5;
+      }
+      .lm-contents li:last-child {
+        border-bottom: none;
+      }
+      .lm-check {
+        color: var(--amber-soft);
+        font-size: 15px;
+        flex-shrink: 0;
+        font-weight: 500;
+      }
+
+      /* The document mockup */
+      .lm-doc-wrap {
+        position: relative;
+      }
+      .lm-doc-shadow {
+        position: absolute;
+        inset: 16px -10px -10px 10px;
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+      }
+      .lm-doc {
+        background: var(--bone);
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      }
+      .lm-doc-cover {
+        background: var(--teal-700);
+        padding: 28px 28px 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .lm-doc-logo {
+        display: flex;
+        align-items: center;
+      }
+      .lm-doc-logo-lockup {
+        height: 44px;
+        width: auto;
+        max-width: 100%;
+        display: block;
+      }
+      .lm-doc-title {
+        font-family: "Lora", Georgia, serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--bone);
+        line-height: 1.25;
+      }
+      .lm-doc-title em {
+        font-style: italic;
+        color: var(--amber-soft);
+      }
+      .lm-doc-sub {
+        font-size: 11px;
+        color: rgba(250, 248, 243, 0.7);
+        font-style: italic;
+        font-family: "Lora", serif;
+        line-height: 1.4;
+      }
+      .lm-doc-body {
+        padding: 20px 24px;
+      }
+      .lm-doc-stat-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+      .lm-doc-stat {
+        background: var(--cloud);
+        border-radius: 4px;
+        padding: 10px 8px;
+        text-align: center;
+      }
+      .lm-doc-stat-num {
+        font-family: "Lora", serif;
+        font-size: 16px;
+        color: var(--amber);
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+      .lm-doc-stat-label {
+        font-size: 9px;
+        color: var(--ink-soft);
+        line-height: 1.4;
+      }
+      .lm-doc-question {
+        background: var(--teal-50);
+        border-radius: 4px;
+        padding: 10px 12px;
+        margin-bottom: 8px;
+        font-size: 11px;
+        color: var(--teal-900);
+        font-weight: 500;
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      .lm-doc-question .q-n {
+        color: var(--amber);
+        font-family: "Lora", serif;
+        font-style: italic;
+        flex-shrink: 0;
+      }
+      .lm-doc-pages {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0 0;
+        border-top: 1px solid var(--line-soft);
+        font-size: 10px;
+        color: var(--ink-soft);
+      }
+      .lm-doc-pages span {
+        font-style: italic;
+        font-family: "Lora", serif;
+        color: var(--teal-700);
+      }
+
+      /* The form */
+      .lm-form-wrap {
+        background: rgba(250, 248, 243, 0.07);
+        border: 1px solid rgba(250, 248, 243, 0.15);
+        border-radius: 8px;
+        padding: 28px;
+        margin-top: 8px;
+      }
+      .lm-form-label {
+        font-size: 13px;
+        color: rgba(250, 248, 243, 0.85);
+        margin-bottom: 18px;
+        font-style: italic;
+        font-family: "Lora", serif;
+        display: block;
+      }
+      .lm-input-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 10px;
+        align-items: stretch;
+      }
+      .lm-input {
+        flex: 1 1 200px;
+        min-width: 0;
+        background: rgba(250, 248, 243, 0.1);
+        border: 1px solid rgba(250, 248, 243, 0.25);
+        border-radius: 999px;
+        padding: 13px 20px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 15px;
+        color: var(--bone);
+        outline: none;
+        transition:
+          border-color 0.15s,
+          background 0.15s;
+        width: 100%;
+      }
+      .lm-input::placeholder {
+        color: rgba(250, 248, 243, 0.45);
+      }
+      .lm-input:focus {
+        border-color: var(--amber-soft);
+        background: rgba(250, 248, 243, 0.14);
+      }
+      .lm-btn {
+        background: var(--amber);
+        color: var(--bone);
+        border: none;
+        border-radius: 999px;
+        padding: 13px 24px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        transition:
+          background 0.15s,
+          transform 0.15s;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0;
+      }
+      .lm-btn:hover {
+        background: #b56908;
+        transform: translateY(-1px);
+      }
+      .lm-btn:disabled {
+        background: var(--teal-500);
+        cursor: not-allowed;
+        transform: none;
+      }
+      .lm-privacy {
+        font-size: 11px;
+        color: rgba(250, 248, 243, 0.5);
+        line-height: 1.55;
+        margin-top: 4px;
+      }
+      .lm-form-error {
+        display: none;
+        font-size: 13px;
+        color: #fecaca;
+        background: rgba(127, 29, 29, 0.35);
+        border: 1px solid rgba(248, 113, 113, 0.45);
+        border-radius: 8px;
+        padding: 12px 14px;
+        margin-bottom: 14px;
+        line-height: 1.45;
+      }
+      .lm-form-error.visible {
+        display: block;
+      }
+
+      /* Success state */
+      .lm-success {
+        display: none;
+        text-align: center;
+        padding: 20px 8px;
+      }
+      .lm-success.visible {
+        display: block;
+      }
+      .lm-success-icon {
+        width: 48px;
+        height: 48px;
+        background: var(--amber);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 16px;
+        font-size: 22px;
+        color: var(--bone);
+      }
+      .lm-success h3 {
+        font-family: "Lora", serif;
+        color: var(--bone);
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      .lm-success p {
+        color: rgba(250, 248, 243, 0.78);
+        font-size: 15px;
+        line-height: 1.6;
+      }
+      .lm-success a {
+        color: var(--amber-soft);
+        font-weight: 500;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      /* ─── RESPONSIVE ─── */
+      @media (max-width: 900px) {
+        html {
+          scroll-padding-top: 92px;
+        }
+        body {
+          padding-top: 92px;
+        }
+        nav {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          box-shadow: 0 1px 0 rgba(10, 61, 66, 0.06);
+        }
+        .wrap {
+          padding: 0 32px;
+        }
+        .nav-inner {
+          gap: 12px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        .logo {
+          flex: 1;
+          min-width: 0;
+          margin-right: auto;
+        }
+        .logo-lockup {
+          height: 60px;
+          max-width: min(92vw, 560px);
+          width: auto;
+          object-fit: contain;
+          object-position: left center;
+        }
+        .nav-links {
+          display: none;
+        }
+        .menu-btn {
+          display: inline-flex;
+          width: 44px;
+          height: 44px;
+          margin: 0;
+          padding: 6px;
+        }
+        .nav-drawer-inner {
+          padding-top: 6px;
+          padding-bottom: 36px;
+        }
+        .nav-drawer-inner a {
+          padding-top: 14px;
+          padding-bottom: 14px;
+        }
+        .nav-drawer-inner a.nav-drawer-cta {
+          margin: 10px 0 24px;
+          padding: 12px 18px;
+        }
+        .hero {
+          padding: 44px 0 80px;
+        }
+        .hero-grid,
+        .problem-grid,
+        .gae-grid,
+        .quiz-grid,
+        .doctor-grid,
+        .location-grid,
+        .faq-grid,
+        .lm-grid {
+          grid-template-columns: 1fr;
+          gap: 50px;
+        }
+        .hero-trust {
+          gap: 24px;
+        }
+        .gae-feature {
+          padding: 50px 32px;
+        }
+        .other-procedures {
+          grid-template-columns: 1fr;
+        }
+        .credentials {
+          grid-template-columns: 1fr;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 40px;
+        }
+        .hero-bg-mark {
+          font-size: 240px;
+        }
+        .visual-tag.t1,
+        .visual-tag.t2 {
+          display: none;
+        }
+      }
+      /* Lead magnet: stack email + CTA before they clip on narrow / split viewports */
+      @media (max-width: 768px) {
+        .lm-input-row--action {
+          flex-direction: column;
+          flex-wrap: nowrap;
+        }
+        .lm-input-row--action .lm-input {
+          flex: 1 1 auto;
+          width: 100%;
+        }
+        .lm-input-row--action .lm-btn {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+      @media (min-width: 601px) and (max-width: 1024px) {
+        .other-procedures {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 600px) {
+        .hero-cta-row {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .btn-primary {
+          justify-content: center;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero-trust {
+          flex-wrap: wrap;
+        }
+        .lm-form-wrap {
+          padding: 22px 18px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .wrap {
+          padding: 0 16px;
+        }
+      }
+
+      /* ─── ANIMATIONS ─── */
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .hero-eyebrow,
+      .hero h1,
+      .hero-sub,
+      .hero-cta-row,
+      .hero-trust {
+        animation: fadeUp 0.7s ease-out backwards;
+      }
+      .hero h1 {
+        animation-delay: 0.08s;
+      }
+      .hero-sub {
+        animation-delay: 0.16s;
+      }
+      .hero-cta-row {
+        animation-delay: 0.24s;
+      }
+      .hero-trust {
+        animation-delay: 0.32s;
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is GAE covered by Medicare or insurance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GAE is covered by Medicare and many commercial insurance plans, though coverage varies by plan and medical necessity. We'll verify your benefits before scheduling and walk you through any out-of-pocket costs in advance \u2014 no surprises."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will I be put under general anesthesia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The procedure uses local anesthesia at the catheter entry site combined with mild IV sedation, similar to what you'd receive for a colonoscopy. Most patients are awake but comfortable, and you can speak with us throughout."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How quickly will I feel relief?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some patients notice meaningful improvement within days. For others, the full benefit develops gradually over 4 to 8 weeks as the inflammation resolves. We'll discuss realistic expectations for your specific situation at your consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I've already had injections or PT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most of our patients have. Many candidates for GAE specifically are people whose injections used to work but no longer do \u2014 that pattern often points to changes in joint vascularization that GAE is well-positioned to address."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will I still need a knee replacement someday?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GAE is not a cure for osteoarthritis \u2014 it's a way to manage pain and inflammation. Some patients use it to delay knee replacement by years; others find it provides enough relief that surgery becomes unnecessary. We'll have a candid conversation about what's realistic for your stage of disease."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is your office?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our office is in Van Nuys at 14411 Hamlin St (zip 91401), with convenient access from Sherman Oaks, Encino, Studio City, Reseda, Lake Balboa, and surrounding neighborhoods. Free parking is available, and we offer ground-floor access for patients with mobility limitations."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ═══════ NAV ═══════ -->
+    <nav>
+      <div class="wrap nav-inner">
+        <a href="index.html" class="logo">
+          <img
+            class="logo-lockup"
+            src="brand/logos/08-horizontal-single-line-primary.svg"
+            alt="Valley Joint Pain Center"
+            width="200"
+            height="60"
+            decoding="async"
+          />
+        </a>
+        <div class="nav-links">
+          <a href="#procedures">Procedures</a>
+          <a href="about-dr-sabeen-dhand.html">Providers</a>
+          <a href="location.html">Location</a>
+          <a href="#faq">FAQ</a>
+          <a href="assessment.html" class="nav-cta">Take the Assessment</a>
+        </div>
+        <button
+          type="button"
+          class="menu-btn"
+          id="navMenuBtn"
+          aria-expanded="false"
+          aria-controls="navDrawer"
+          aria-label="Open menu"
+        >
+          <svg
+            class="icon-menu"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg
+            class="icon-close"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="nav-drawer" id="navDrawer" hidden>
+        <div class="wrap nav-drawer-inner">
+          <a href="#procedures">Procedures</a>
+          <a href="about-dr-sabeen-dhand.html">Providers</a>
+          <a href="location.html">Location</a>
+          <a href="#faq">FAQ</a>
+          <a href="valleyjointpain-insurance-billing.html">Insurance &amp; billing</a>
+          <a href="assessment.html" class="nav-drawer-cta">Take the Assessment</a>
+        </div>
+      </div>
+      <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+    </nav>
+
+    <!-- ═══════ HERO ═══════ -->
+    <section class="hero">
+      <div class="hero-bg-mark">&amp;</div>
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-eyebrow">
+              San Fernando Valley · Board-Certified
+            </div>
+            <h1>Knee pain relief, <em>without</em> the surgery.</h1>
+            <p class="hero-sub">
+              A two-minute assessment to learn whether Genicular Artery
+              Embolization or another minimally invasive procedure could be the
+              right alternative to knee replacement for you.
+            </p>
+            <div class="hero-cta-row">
+              <a href="assessment.html" class="btn-primary">
+                Take the 2-minute assessment
+                <svg
+                  width="18"
+                  height="14"
+                  viewBox="0 0 18 14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <path
+                    d="M1 7h15M11 1l6 6-6 6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="genicular-artery-embolization.html" class="btn-secondary"
+                >Or learn about GAE first</a
+              >
+            </div>
+            <div class="hero-trust">
+              <div class="trust-item">
+                <span class="trust-num">2 hrs</span>
+                <span class="trust-label">Outpatient procedure</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-num">85%</span>
+                <span class="trust-label">Patients report relief</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-num">2-3 days</span>
+                <span class="trust-label">Typical recovery</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <!-- Stylized anatomical knee illustration -->
+            <svg
+              viewBox="0 0 400 500"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice"
+            >
+              <defs>
+                <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#ecf5f5" />
+                  <stop offset="100%" stop-color="#d6ebed" />
+                </linearGradient>
+                <linearGradient id="boneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#faf8f3" />
+                  <stop offset="100%" stop-color="#ebe7dc" />
+                </linearGradient>
+                <radialGradient id="painPulse" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#c8780a" stop-opacity="0.5" />
+                  <stop offset="60%" stop-color="#c8780a" stop-opacity="0.15" />
+                  <stop offset="100%" stop-color="#c8780a" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+
+              <!-- Soft background -->
+              <rect width="400" height="500" fill="url(#skinGrad)" />
+
+              <!-- Decorative grid -->
+              <g opacity="0.18" stroke="#0d5c63" stroke-width="0.4">
+                <line x1="0" y1="125" x2="400" y2="125" />
+                <line x1="0" y1="250" x2="400" y2="250" />
+                <line x1="0" y1="375" x2="400" y2="375" />
+                <line x1="100" y1="0" x2="100" y2="500" />
+                <line x1="200" y1="0" x2="200" y2="500" />
+                <line x1="300" y1="0" x2="300" y2="500" />
+              </g>
+
+              <!-- Leg silhouette -->
+              <path
+                d="M 130 0 Q 140 80 150 160 L 145 230 Q 130 260 130 290 L 130 310 Q 145 340 165 360 L 180 380 Q 200 400 215 410 L 230 420 L 240 500 L 280 500 L 280 420 Q 280 380 270 350 L 260 320 Q 250 290 250 260 L 250 230 Q 250 180 260 100 L 270 0 Z"
+                fill="url(#boneGrad)"
+                stroke="#0d5c63"
+                stroke-width="1"
+                opacity="0.85"
+              />
+
+              <!-- Femur (thigh bone) -->
+              <path
+                d="M 175 30 Q 180 100 190 180 L 195 240 Q 200 250 205 250 L 215 250 Q 220 250 220 240 L 215 180 Q 210 100 205 30 Z"
+                fill="#faf8f3"
+                stroke="#0d5c63"
+                stroke-width="1.2"
+              />
+
+              <!-- Knee joint cartilage -->
+              <ellipse
+                cx="200"
+                cy="265"
+                rx="32"
+                ry="10"
+                fill="#0d5c63"
+                opacity="0.18"
+              />
+
+              <!-- Patella (kneecap) -->
+              <ellipse
+                cx="200"
+                cy="262"
+                rx="22"
+                ry="18"
+                fill="#faf8f3"
+                stroke="#0d5c63"
+                stroke-width="1.3"
+              />
+              <ellipse
+                cx="200"
+                cy="262"
+                rx="22"
+                ry="18"
+                fill="none"
+                stroke="#c8780a"
+                stroke-width="0.6"
+                opacity="0.4"
+              />
+
+              <!-- Tibia (shin bone) -->
+              <path
+                d="M 180 280 Q 178 290 180 300 L 188 380 Q 195 460 205 500 L 230 500 Q 225 460 220 380 L 220 300 Q 222 290 220 280 Z"
+                fill="#faf8f3"
+                stroke="#0d5c63"
+                stroke-width="1.2"
+              />
+
+              <!-- Genicular arteries (the targets of GAE) -->
+              <g stroke="#c8780a" stroke-width="1.3" fill="none" opacity="0.85">
+                <path
+                  d="M 178 248 Q 165 255 158 265 Q 152 275 155 285"
+                  stroke-dasharray="0"
+                />
+                <path
+                  d="M 222 248 Q 235 255 242 265 Q 248 275 245 285"
+                  stroke-dasharray="0"
+                />
+                <path d="M 185 245 Q 175 240 168 232" />
+                <path d="M 215 245 Q 225 240 232 232" />
+                <path d="M 175 270 Q 168 280 165 295" />
+                <path d="M 225 270 Q 232 280 235 295" />
+              </g>
+
+              <!-- Pain glow at joint -->
+              <circle cx="200" cy="265" r="55" fill="url(#painPulse)">
+                <animate
+                  attributeName="r"
+                  values="50;65;50"
+                  dur="3s"
+                  repeatCount="indefinite"
+                />
+                <animate
+                  attributeName="opacity"
+                  values="0.7;0.3;0.7"
+                  dur="3s"
+                  repeatCount="indefinite"
+                />
+              </circle>
+
+              <!-- Treatment marker dots -->
+              <g fill="#c8780a">
+                <circle cx="158" cy="265" r="3.5">
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.3;1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  />
+                </circle>
+                <circle cx="242" cy="265" r="3.5">
+                  <animate
+                    attributeName="opacity"
+                    values="0.3;1;0.3"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  />
+                </circle>
+                <circle cx="168" cy="232" r="2.5">
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.4;1"
+                    dur="2.5s"
+                    repeatCount="indefinite"
+                  />
+                </circle>
+                <circle cx="232" cy="232" r="2.5">
+                  <animate
+                    attributeName="opacity"
+                    values="0.4;1;0.4"
+                    dur="2.5s"
+                    repeatCount="indefinite"
+                  />
+                </circle>
+              </g>
+
+              <!-- Anatomical labels -->
+              <g
+                font-family="Lora, serif"
+                font-style="italic"
+                font-size="11"
+                fill="#0a3d42"
+                opacity="0.55"
+              >
+                <text x="248" y="262">patella</text>
+                <text x="248" y="276" font-size="9" opacity="0.7">
+                  (kneecap)
+                </text>
+              </g>
+            </svg>
+
+            <div class="visual-tag t1"><em>fig. 01</em> Genicular arteries</div>
+            <div class="visual-tag t2">
+              <em>fig. 02</em> Embolization target
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ PROBLEM ═══════ -->
+    <section class="problem">
+      <div class="wrap">
+        <div class="problem-grid">
+          <div>
+            <div class="section-eyebrow">If you're reading this</div>
+            <h2>
+              You've probably been told to wait. Or to push through. Or that
+              surgery is the only way forward.
+            </h2>
+          </div>
+          <div class="problem-list">
+            <div class="problem-item">
+              <span class="problem-num">i.</span>
+              <div>
+                <h3>The injections aren't lasting like they used to</h3>
+                <p>
+                  Cortisone gave you months of relief — then weeks. Hyaluronic
+                  acid worked once. Now nothing seems to last, and you're being
+                  asked to come in more often for less benefit.
+                </p>
+              </div>
+            </div>
+            <div class="problem-item">
+              <span class="problem-num">ii.</span>
+              <div>
+                <h3>You're not ready for a knee replacement</h3>
+                <p>
+                  Maybe you're too young. Maybe surgery isn't realistic given
+                  your work or your other health conditions. Maybe you've
+                  watched a friend recover from one and it's not a road you want
+                  to walk.
+                </p>
+              </div>
+            </div>
+            <div class="problem-item">
+              <span class="problem-num">iii.</span>
+              <div>
+                <h3>You haven't been told about your other options</h3>
+                <p>
+                  There's a category of minimally invasive, image-guided
+                  procedures most patients are never offered — because they're
+                  performed by interventional radiologists, not orthopedic
+                  surgeons.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ SOLUTION / GAE ═══════ -->
+    <section class="solution" id="procedures">
+      <div class="wrap">
+        <div class="solution-header">
+          <div class="section-eyebrow">What we offer</div>
+          <h2>
+            Image-guided procedures designed to relieve pain — not replace your
+            joint.
+          </h2>
+          <p>
+            Genicular Artery Embolization is one of several minimally invasive
+            procedures performed in our outpatient suite. Each is image-guided,
+            performed under local anesthesia, and designed for patients who want
+            lasting relief without major surgery.
+          </p>
+        </div>
+
+        <div class="gae-feature" id="gae">
+          <div class="gae-grid">
+            <div>
+              <span class="gae-label">Featured procedure</span>
+              <h2>Genicular Artery <em>Embolization</em></h2>
+              <p>
+                An outpatient procedure that targets the abnormal blood vessels
+                feeding inflammation in your knee. Through a small catheter —
+                about the diameter of angel hair pasta — we deliver microscopic
+                particles that calm the inflammation at its source.
+              </p>
+            </div>
+            <div>
+              <div class="gae-stats">
+                <div>
+                  <div class="gae-stat-num">~2 hrs</div>
+                  <div class="gae-stat-label">Total time at our office</div>
+                </div>
+                <div>
+                  <div class="gae-stat-num">No gen.<br />anesthesia</div>
+                  <div class="gae-stat-label">
+                    Sedation only — you stay awake
+                  </div>
+                </div>
+                <div>
+                  <div class="gae-stat-num">2-3 days</div>
+                  <div class="gae-stat-label">Back to most normal activity</div>
+                </div>
+                <div>
+                  <div class="gae-stat-num">85%</div>
+                  <div class="gae-stat-label">
+                    Patients report meaningful relief at one year
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 24px;
+                  flex-wrap: wrap;
+                  align-items: center;
+                "
+              >
+                <a href="genicular-artery-embolization.html" class="gae-link"
+                  >Read the full GAE deep-dive →</a
+                >
+                <a href="assessment.html" class="gae-link" style="opacity: 0.85"
+                  >Take the assessment →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="other-procedures">
+          <a href="radiofrequency-ablation.html" class="proc-card">
+            <svg
+              class="proc-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.4"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <circle cx="12" cy="12" r="4" stroke-dasharray="2 2" />
+              <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
+            </svg>
+            <span class="proc-card-abbr">RFA</span>
+            <h3>Radiofrequency Ablation</h3>
+            <p>
+              For nerve-driven joint pain. Targeted heat is used to interrupt
+              pain signals from the genicular nerves with no incision required.
+            </p>
+          </a>
+          <a href="hip-shoulder-embolization.html" class="proc-card">
+            <svg
+              class="proc-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.4"
+            >
+              <path d="M3 12c2-3 5-5 9-5s7 2 9 5" />
+              <path d="M3 12c2 3 5 5 9 5s7-2 9-5" />
+              <circle cx="12" cy="12" r="2.5" fill="currentColor" />
+            </svg>
+            <span class="proc-card-abbr">Embolization</span>
+            <h3>Hip &amp; Shoulder Embolization</h3>
+            <p>
+              The same precision technique used for the knee, applied to the hip
+              and shoulder for inflammatory joint pain that hasn't responded to
+              conservative care.
+            </p>
+          </a>
+          <a href="joint-injections.html" class="proc-card">
+            <svg
+              class="proc-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.4"
+            >
+              <path d="M14 4l6 6-9 9-6-6 9-9z" />
+              <path d="M16 6l2 2" />
+              <circle cx="6" cy="18" r="1.5" fill="currentColor" />
+            </svg>
+            <span class="proc-card-abbr">Image-Guided</span>
+            <h3>Advanced Joint Injections</h3>
+            <p>
+              Ultrasound and fluoroscopy-guided steroid, hyaluronic acid, and
+              PRP injections — placed precisely, rather than blindly, for better
+              and longer-lasting relief.
+            </p>
+          </a>
+          <a href="prostate-artery-embolization.html" class="proc-card">
+            <svg
+              class="proc-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.4"
+            >
+              <ellipse cx="12" cy="14" rx="6" ry="5" />
+              <path d="M12 9V5" />
+              <path d="M9 5h6" />
+              <circle cx="6" cy="14" r="0.8" fill="currentColor" />
+              <circle cx="18" cy="14" r="0.8" fill="currentColor" />
+            </svg>
+            <span class="proc-card-abbr">PAE · Men's Health</span>
+            <h3>Prostate Artery Embolization</h3>
+            <p>
+              A non-surgical alternative for men with enlarged prostate (BPH)
+              symptoms. Outpatient, no catheter to take home, no sexual side
+              effects.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ QUIZ CTA ═══════ -->
+    <section class="quiz-cta" id="quiz">
+      <div class="wrap">
+        <div class="quiz-grid">
+          <div>
+            <div class="section-eyebrow">Two-minute assessment</div>
+            <h2>Wondering if you'd be <em>a candidate</em>?</h2>
+            <p>
+              Most patients have spent years cycling through treatments before
+              they hear about us. Our brief assessment helps you understand — in
+              plain language — whether one of our procedures could be a fit for
+              what you've been dealing with.
+            </p>
+            <ul class="quiz-features">
+              <li>
+                <span class="check-icon">✓</span> Six simple questions about
+                your symptoms
+              </li>
+              <li>
+                <span class="check-icon">✓</span> A personalized response from
+                one of our providers
+              </li>
+              <li>
+                <span class="check-icon">✓</span> No commitment, no obligation,
+                no insurance required
+              </li>
+            </ul>
+            <a
+              href="assessment.html"
+              class="btn-primary"
+              style="display: inline-flex"
+            >
+              Begin the assessment
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path
+                  d="M1 7h15M11 1l6 6-6 6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <a
+            href="assessment.html"
+            class="quiz-preview"
+            style="text-decoration: none; color: inherit; display: block"
+          >
+            <h3>Where is your pain or limited movement?</h3>
+            <div class="quiz-options">
+              <div class="quiz-option">Knee — one or both</div>
+              <div class="quiz-option selected">Right knee, mostly</div>
+              <div class="quiz-option">Hip</div>
+              <div class="quiz-option">Shoulder</div>
+              <div class="quiz-option">Multiple areas</div>
+            </div>
+            <div class="quiz-progress">
+              <div class="quiz-progress-fill"></div>
+            </div>
+            <div
+              style="
+                margin-top: 18px;
+                font-size: 13px;
+                color: var(--ink-soft);
+                text-align: right;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 8px;
+              "
+            >
+              <span
+                style="font-style: italic; font-family: &quot;Lora&quot;, serif"
+                >Continue the assessment</span
+              >
+              <svg
+                width="14"
+                height="11"
+                viewBox="0 0 18 14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path
+                  d="M1 7h15M11 1l6 6-6 6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ LEAD MAGNET ═══════ -->
+    <section class="lead-magnet" id="guide">
+      <div class="wrap">
+        <div class="lm-grid">
+          <!-- Left: messaging + form -->
+          <div>
+            <div class="lm-eyebrow">Free patient resource</div>
+            <h2>
+              Get the guide: talking to your doctor about
+              <em>non-surgical</em> options.
+            </h2>
+            <p class="lm-desc">
+              Most primary care physicians and orthopedic surgeons won't bring
+              up interventional radiology procedures — either because they're
+              not yet familiar with GAE, or because it's outside their scope.
+              This guide gives you the science, the side-by-side comparison with
+              surgery, and 8 specific questions to bring to your next
+              appointment.
+            </p>
+
+            <ul class="lm-contents">
+              <li>
+                <span class="lm-check">✓</span> The biology of how GAE works —
+                in plain language, not jargon
+              </li>
+              <li>
+                <span class="lm-check">✓</span> Clinical data from peer-reviewed
+                trials: real outcomes, real numbers
+              </li>
+              <li>
+                <span class="lm-check">✓</span> Honest side-by-side: GAE vs.
+                knee replacement with full citations
+              </li>
+              <li>
+                <span class="lm-check">✓</span> 8 questions to ask your doctor —
+                with notes on what a good answer sounds like
+              </li>
+              <li>
+                <span class="lm-check">✓</span> Write-in space to record what
+                your doctor says
+              </li>
+              <li>
+                <span class="lm-check">✓</span> All 12 references so you can
+                cite the studies if challenged
+              </li>
+            </ul>
+
+            <div class="lm-form-wrap" id="lmFormWrap">
+              <span class="lm-form-label" id="lmFormLabel"
+                >Enter your email and we'll send it immediately — no account
+                needed.</span
+              >
+
+              <div id="lmFormFields">
+                <div class="lm-form-error" id="lmFormError" role="alert"></div>
+                <div class="lm-input-row">
+                  <input
+                    type="text"
+                    class="lm-input"
+                    id="lmName"
+                    placeholder="First name"
+                    autocomplete="given-name"
+                  />
+                </div>
+                <div class="lm-input-row lm-input-row--action">
+                  <input
+                    type="email"
+                    class="lm-input"
+                    id="lmEmail"
+                    placeholder="Email address"
+                    autocomplete="email"
+                  />
+                  <button
+                    class="lm-btn"
+                    id="lmSubmit"
+                    onclick="submitLeadMagnet()"
+                  >
+                    Send the guide
+                    <svg
+                      width="14"
+                      height="11"
+                      viewBox="0 0 18 14"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <path
+                        d="M1 7h15M11 1l6 6-6 6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <p class="lm-privacy">
+                  No spam, ever. We follow HIPAA standards and will never sell
+                  or share your email. Unsubscribe any time.
+                </p>
+              </div>
+
+              <div class="lm-success" id="lmSuccess">
+                <div class="lm-success-icon">✓</div>
+                <h3 id="lmSuccessName">Your guide is on its way.</h3>
+                <p>
+                  Check your inbox — the guide should arrive within a minute. If
+                  you don't see it, check your spam folder.<br /><br />When
+                  you're ready, you can also
+                  <a href="assessment.html">take the 2-minute assessment</a> to
+                  find out if you're likely to be a candidate for one of our
+                  procedures.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: document mockup -->
+          <div class="lm-doc-wrap">
+            <div class="lm-doc-shadow"></div>
+            <div class="lm-doc">
+              <div class="lm-doc-cover">
+                <div class="lm-doc-logo">
+                  <img
+                    class="lm-doc-logo-lockup"
+                    src="brand/logos/09-horizontal-single-line-reversed.svg"
+                    alt="Valley Joint Pain Center"
+                    width="200"
+                    height="60"
+                    decoding="async"
+                  />
+                </div>
+                <div class="lm-doc-title">
+                  Talking to your doctor about <em>non-surgical</em> knee pain
+                  options.
+                </div>
+                <div class="lm-doc-sub">
+                  A practical guide to the conversation, the science, and the
+                  questions worth asking.
+                </div>
+              </div>
+              <div class="lm-doc-body">
+                <div
+                  style="
+                    font-size: 10px;
+                    color: var(--teal-700);
+                    font-weight: 500;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                  "
+                >
+                  What the research shows
+                </div>
+                <div class="lm-doc-stat-row">
+                  <div class="lm-doc-stat">
+                    <div class="lm-doc-stat-num">
+                      47<span style="font-size: 10px">%</span>
+                    </div>
+                    <div class="lm-doc-stat-label">
+                      meaningful pain relief at 24 months
+                    </div>
+                  </div>
+                  <div class="lm-doc-stat">
+                    <div class="lm-doc-stat-num">
+                      72<span style="font-size: 10px">%</span>
+                    </div>
+                    <div class="lm-doc-stat-label">
+                      durable response at 2 years
+                    </div>
+                  </div>
+                  <div class="lm-doc-stat">
+                    <div class="lm-doc-stat-num">
+                      &lt;2<span style="font-size: 10px">%</span>
+                    </div>
+                    <div class="lm-doc-stat-label">
+                      significant complication rate
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    font-size: 10px;
+                    color: var(--teal-700);
+                    font-weight: 500;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                    margin: 14px 0 8px;
+                  "
+                >
+                  Questions to ask your doctor
+                </div>
+                <div class="lm-doc-question">
+                  <span class="q-n">01</span> Based on my imaging, what's my
+                  Kellgren-Lawrence grade?
+                </div>
+                <div class="lm-doc-question">
+                  <span class="q-n">02</span> What non-surgical options have I
+                  not yet tried?
+                </div>
+                <div class="lm-doc-question">
+                  <span class="q-n">03</span> Are you familiar with Genicular
+                  Artery Embolization?
+                </div>
+                <div class="lm-doc-pages">
+                  <span>11 pages</span>
+                  <span>12 cited references</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ DOCTOR ═══════ -->
+    <section class="doctor" id="doctor">
+      <div class="wrap">
+        <div class="doctor-grid">
+          <div class="doctor-portrait-frame">
+            <picture>
+              <source srcset="dr-dhand.webp" type="image/webp" />
+              <img
+                src="dr-dhand.jpg"
+                alt="Dr. Sabeen Dhand, MD — board-certified interventional radiologist"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div>
+            <div class="section-eyebrow">Your physician</div>
+            <h2>Dr. Sabeen Dhand, MD</h2>
+            <div class="doctor-title">
+              Board-Certified Interventional &amp; Diagnostic Radiologist
+            </div>
+            <div class="doctor-bio">
+              <p>
+                Dr. Dhand is a Northwestern-trained interventional radiologist
+                and Assistant Clinical Professor of Radiology at the UCLA School
+                of Medicine. He has performed thousands of image-guided
+                minimally invasive procedures and is nationally recognized in
+                the field — including selection as Program Director of the 2023
+                Western Angiographic and Interventional Society conference.
+              </p>
+              <p>
+                Every consultation begins the same way — with a careful review
+                of your imaging, your treatment history, and what you've
+                actually been experiencing day to day. Some patients are
+                excellent candidates for GAE; some are not. The goal of your
+                visit is an honest answer about what's likely to actually help
+                you.
+              </p>
+            </div>
+            <div class="credentials">
+              <div class="cred">
+                <div class="cred-label">Medical school</div>
+                <div class="cred-val">
+                  Northwestern Feinberg<br />School of Medicine
+                </div>
+              </div>
+              <div class="cred">
+                <div class="cred-label">Board Certifications</div>
+                <div class="cred-val">
+                  Interventional &amp; Diagnostic Radiology
+                </div>
+              </div>
+              <div class="cred">
+                <div class="cred-label">Academic appointment</div>
+                <div class="cred-val">
+                  Asst. Clinical Professor,<br />UCLA School of Medicine
+                </div>
+              </div>
+              <div class="cred">
+                <div class="cred-label">Languages</div>
+                <div class="cred-val">English, Spanish</div>
+              </div>
+            </div>
+            <div style="margin-top: 32px">
+              <a
+                href="about-dr-sabeen-dhand.html"
+                style="
+                  font-size: 15px;
+                  color: var(--teal-700);
+                  border-bottom: 1px solid var(--line);
+                  padding-bottom: 3px;
+                  transition:
+                    color 0.15s,
+                    border-color 0.15s;
+                  font-weight: 500;
+                "
+                >Read Dr. Dhand's full bio →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ LOCATION ═══════ -->
+    <section class="location" id="location">
+      <div class="wrap">
+        <div class="location-grid">
+          <div class="location-info">
+            <div class="section-eyebrow">Where to find us</div>
+            <h2>Van Nuys, in the heart of <em>the Valley</em>.</h2>
+            <p class="location-tagline">
+              Our office is centrally located in Van Nuys, with easy access from
+              anywhere in the San Fernando Valley. Free parking is available on
+              site, and the building is fully accessible for patients with
+              mobility limitations.
+            </p>
+
+            <div class="location-details">
+              <div class="loc-detail">
+                <div class="loc-detail-label">Address</div>
+                <div class="loc-detail-val">
+                  14411 Hamlin St<br />Van Nuys, CA 91401
+                </div>
+              </div>
+              <div class="loc-detail">
+                <div class="loc-detail-label">Phone</div>
+                <div class="loc-detail-val">
+                  <a href="tel:+18184188165">(818) 418-8165</a>
+                </div>
+              </div>
+              <div class="loc-detail">
+                <div class="loc-detail-label">Hours</div>
+                <div class="loc-detail-val">
+                  Mon – Fri<br />8:30 am – 5:00 pm
+                </div>
+              </div>
+              <div class="loc-detail">
+                <div class="loc-detail-label">Parking</div>
+                <div class="loc-detail-val">
+                  Free on-site parking,<br />ground-floor access
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=14411+Hamlin+St+Van+Nuys+CA+91401"
+              target="_blank"
+              rel="noopener"
+              class="location-cta"
+            >
+              Get directions in Google Maps
+              <svg
+                width="16"
+                height="12"
+                viewBox="0 0 18 14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path
+                  d="M1 7h15M11 1l6 6-6 6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+
+            <div class="neighborhoods">
+              <span class="neighborhood-pill">Sherman Oaks</span>
+              <span class="neighborhood-pill">Encino</span>
+              <span class="neighborhood-pill">Studio City</span>
+              <span class="neighborhood-pill">Reseda</span>
+              <span class="neighborhood-pill">Lake Balboa</span>
+              <span class="neighborhood-pill">North Hollywood</span>
+              <span class="neighborhood-pill">Tarzana</span>
+            </div>
+          </div>
+
+          <div class="location-map">
+            <div class="location-map-tag">14411 Hamlin St</div>
+            <iframe
+              src="https://www.google.com/maps?q=14411+Hamlin+St+Van+Nuys+CA+91401&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map of Valley Joint Pain Center, 14411 Hamlin St, Van Nuys CA"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ TESTIMONIAL ═══════ -->
+    <section class="testimonial">
+      <div class="wrap">
+        <div class="testimonial-content">
+          <p class="testimonial-quote">
+            I'd been carrying a cane for two years. Three weeks after the
+            procedure with Dr. Dhand, my granddaughter and I walked the whole
+            length of the Sherman Oaks farmers market — twice. I cried in the
+            car on the way home.
+          </p>
+          <div class="testimonial-attr">
+            <div class="testimonial-avatar">M</div>
+            <div class="testimonial-name">
+              <div class="n">Margaret R.</div>
+              <div class="l">GAE patient · Van Nuys, CA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ FAQ ═══════ -->
+    <section class="faq" id="faq">
+      <div class="wrap">
+        <div class="faq-grid">
+          <div>
+            <div class="section-eyebrow">Common questions</div>
+            <h2>Patients usually want to know.</h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-q">
+                Is GAE covered by Medicare or insurance?
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-a">
+                GAE is covered by Medicare and many commercial insurance plans,
+                though coverage varies by plan and medical necessity. We'll
+                verify your benefits before scheduling and walk you through any
+                out-of-pocket costs in advance — no surprises.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                Will I be put under general anesthesia?
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-a">
+                No. The procedure uses local anesthesia at the catheter entry
+                site combined with mild IV sedation, similar to what you'd
+                receive for a colonoscopy. Most patients are awake but
+                comfortable, and you can speak with us throughout.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                How quickly will I feel relief?
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-a">
+                Some patients notice meaningful improvement within days. For
+                others, the full benefit develops gradually over 4 to 8 weeks as
+                the inflammation resolves. We'll discuss realistic expectations
+                for your specific situation at your consultation.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                What if I've already had injections or PT?
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-a">
+                Most of our patients have. Many candidates for GAE specifically
+                are people whose injections used to work but no longer do — that
+                pattern often points to changes in joint vascularization that
+                GAE is well-positioned to address.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                Will I still need a knee replacement someday?
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-a">
+                GAE is not a cure for osteoarthritis — it's a way to manage pain
+                and inflammation. Some patients use it to delay knee replacement
+                by years; others find it provides enough relief that surgery
+                becomes unnecessary. We'll have a candid conversation about
+                what's realistic for your stage of disease.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                Where is your office? <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-a">
+                Our office is in Van Nuys at 14411 Hamlin St (zip 91401), with
+                convenient access from Sherman Oaks, Encino, Studio City,
+                Reseda, Lake Balboa, and surrounding neighborhoods. Free parking
+                is available, and we offer ground-floor access for patients with
+                mobility limitations.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ FINAL CTA ═══════ -->
+    <section class="final-cta" id="contact">
+      <div class="wrap">
+        <h2>Find out if relief is <em>actually</em> possible for you.</h2>
+        <p>
+          Take the two-minute assessment. If you're a likely candidate, we'll
+          invite you in for a consultation with one of our providers.
+        </p>
+        <a href="assessment.html" class="btn-primary">
+          Take the assessment
+          <svg
+            width="18"
+            height="14"
+            viewBox="0 0 18 14"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+          >
+            <path
+              d="M1 7h15M11 1l6 6-6 6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer>
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <div class="logo">
+              <img
+                class="logo-lockup"
+                src="brand/logos/05-horizontal-reversed.svg"
+                alt="Valley Joint Pain Center"
+                width="200"
+                height="60"
+                decoding="async"
+              />
+            </div>
+            <p class="footer-tag">
+              Non-surgical joint pain treatment for the San Fernando Valley.
+              Image-guided procedures performed by a board-certified
+              interventional radiologist.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Procedures</h4>
+            <a href="genicular-artery-embolization.html"
+              >Genicular Artery Embolization</a
+            >
+            <a href="radiofrequency-ablation.html">Radiofrequency Ablation</a>
+            <a href="hip-shoulder-embolization.html"
+              >Hip &amp; Shoulder Embolization</a
+            >
+            <a href="joint-injections.html">Image-Guided Joint Injections</a>
+            <a href="prostate-artery-embolization.html"
+              >Prostate Artery Embolization</a
+            >
+          </div>
+          <div class="footer-col">
+            <h4>Practice</h4>
+            <a href="about-dr-sabeen-dhand.html">Providers</a>
+            <a href="assessment.html">Patient Assessment</a>
+            <a href="#faq">FAQ</a>
+            <a href="valleyjointpain-insurance-billing.html"
+              >Insurance &amp; billing</a
+            >
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <p>(818) 418-8165</p>
+            <p>14411 Hamlin St<br />Van Nuys, CA 91401</p>
+            <p>Mon – Fri · 8:30am – 5pm</p>
+          </div>
+        </div>
+
+        <div class="footer-disclaimer">
+          The information presented on this website is for educational purposes
+          only and does not constitute medical advice. Individual results vary.
+          Genicular Artery Embolization is not appropriate for every patient
+          with knee pain; suitability is determined through clinical evaluation,
+          including review of imaging and medical history. Please consult with a
+          licensed physician regarding any medical condition.
+        </div>
+
+        <div class="footer-bottom">
+          <div>© 2026 Valley Joint Pain Center. All rights reserved.</div>
+          <div style="display: flex; gap: 24px">
+            <a href="#" style="display: inline; padding: 0">Privacy</a>
+            <a href="#" style="display: inline; padding: 0">Accessibility</a>
+            <a href="#" style="display: inline; padding: 0">HIPAA Notice</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile nav drawer
+      (function () {
+        const btn = document.getElementById("navMenuBtn");
+        const drawer = document.getElementById("navDrawer");
+        const overlay = document.getElementById("navOverlay");
+        if (!btn || !drawer) return;
+        function setOpen(open) {
+          drawer.hidden = !open;
+          btn.setAttribute("aria-expanded", String(open));
+          btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+          if (overlay) overlay.classList.toggle("visible", open);
+          document.body.style.overflow = open ? "hidden" : "";
+        }
+        btn.addEventListener("click", () => setOpen(drawer.hidden));
+        if (overlay) overlay.addEventListener("click", () => setOpen(false));
+        drawer.querySelectorAll("a").forEach((a) => {
+          a.addEventListener("click", () => setOpen(false));
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") setOpen(false);
+        });
+      })();
+
+      // FAQ accordion
+      document.querySelectorAll(".faq-q").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const item = btn.parentElement;
+          const wasOpen = item.classList.contains("open");
+          document
+            .querySelectorAll(".faq-item")
+            .forEach((i) => i.classList.remove("open"));
+          if (!wasOpen) item.classList.add("open");
+        });
+      });
+
+      // Open first FAQ by default
+      document.querySelector(".faq-item").classList.add("open");
+
+      // Lead magnet → Airtable via Vercel serverless (/api/submit-lead-magnet)
+      async function submitLeadMagnet() {
+        const nameEl = document.getElementById("lmName");
+        const emailEl = document.getElementById("lmEmail");
+        const btn = document.getElementById("lmSubmit");
+        const errEl = document.getElementById("lmFormError");
+
+        const name = nameEl.value.trim();
+        const email = emailEl.value.trim();
+
+        errEl.classList.remove("visible");
+        errEl.textContent = "";
+
+        // Basic validation
+        if (!name) {
+          nameEl.focus();
+          nameEl.style.borderColor = "var(--amber-soft)";
+          return;
+        }
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          emailEl.focus();
+          emailEl.style.borderColor = "var(--amber-soft)";
+          return;
+        }
+
+        const params = new URLSearchParams(window.location.search);
+        const utmSource =
+          params.get("utm_source") || "landing page lead form";
+
+        const btnLabel = btn.innerHTML;
+        btn.disabled = true;
+        btn.textContent = "Sending…";
+
+        try {
+          const res = await fetch("/api/submit-lead-magnet", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              firstName: name,
+              email,
+              utm_source: utmSource,
+            }),
+          });
+
+          const data = await res.json().catch(() => ({}));
+
+          if (!res.ok) {
+            throw new Error(
+              data.error ||
+                data.details ||
+                "Something went wrong. Please try again."
+            );
+          }
+
+          const labelEl = document.getElementById("lmFormLabel");
+          if (labelEl) labelEl.hidden = true;
+          document.getElementById("lmFormFields").style.display = "none";
+          document.getElementById("lmSuccess").classList.add("visible");
+          document.getElementById("lmSuccessName").textContent =
+            `${name}, your guide is on its way.`;
+        } catch (e) {
+          errEl.textContent =
+            e.message ||
+            "We couldn’t save your request. Check your connection or try again.";
+          errEl.classList.add("visible");
+          btn.disabled = false;
+          btn.innerHTML = btnLabel;
+        }
+      }
+    </script>
+  </body>
+</html>

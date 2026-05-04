@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <title>Valley Joint Pain Center mark</title>
+  <desc>Two arcs forming a hinge, with an amber pivot dot. Primary brand mark.</desc>
+  <g transform="translate(100, 100)">
+    <path d="M -10 -55 Q -55 -55 -55 -10 L -55 10 Q -55 55 -10 55" stroke="#0a3d42" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 10 -55 Q 55 -55 55 -10 L 55 10 Q 55 55 10 55" stroke="#0a3d42" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="9" fill="#c8780a"/>
+  </g>
+</svg>

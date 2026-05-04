@@ -1,0 +1,10 @@
+{
+  "name": "valley-joint-pain",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

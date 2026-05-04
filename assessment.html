@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="brand/favicons/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="brand/favicons/apple-touch-icon.svg" />
+
+
+<title>Knee Pain Assessment | Valley Joint Pain Center, Van Nuys CA</title>
+<meta name="description" content="A two-minute assessment to learn whether Genicular Artery Embolization or another minimally invasive procedure could be a fit for your chronic knee pain. Free, no obligation, no insurance required." />
+<link rel="canonical" href="https://valleyjointpain.com/assessment" />
+<meta name="robots" content="index, follow" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="brand/colors/colors.css" />
+
+<style>
+  :root {
+    --teal-900: var(--vjp-teal-900, #0a3d42);
+    --teal-700: var(--vjp-teal-700, #0d5c63);
+    --teal-500: var(--vjp-teal-500, #1a8a93);
+    --teal-100: var(--vjp-teal-100, #d6ebed);
+    --teal-50: var(--vjp-teal-50, #ecf5f5);
+    --amber: var(--vjp-amber, #c8780a);
+    --amber-soft: var(--vjp-amber-soft, #e8a043);
+    --cloud: var(--vjp-cloud, #f5f3ee);
+    --bone: var(--vjp-bone, #faf8f3);
+    --ink: var(--vjp-ink, #15201f);
+    --ink-soft: var(--vjp-ink-soft, #4a5957);
+    --line: var(--vjp-line, #d8d3c7);
+    --line-soft: var(--vjp-line-soft, #ebe7dc);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    font-family: 'DM Sans', -apple-system, sans-serif;
+    background: var(--bone);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  h1, h2, h3, h4 { font-family: 'Lora', Georgia, serif; font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; color: var(--teal-900); }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 32px; width: 100%; }
+
+  /* MINIMAL NAV — the quiz is the page, no distractions */
+  nav {
+    background: rgba(250,248,243,0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line-soft);
+    padding: 18px 0;
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 720px; margin: 0 auto; padding: 0 32px; }
+  .logo { display: flex; align-items: center; gap: 14px; }
+  .logo-lockup { height: 52px; width: auto; display: block; flex-shrink: 0; }
+  footer .logo .logo-lockup { height: 60px; }
+  .nav-back { font-size: 13px; color: var(--ink-soft); transition: color 0.15s; }
+  .nav-back:hover { color: var(--teal-700); }
+
+  /* MAIN QUIZ AREA */
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 80px;
+  }
+
+  /* PROGRESS */
+  .progress-shell {
+    margin-bottom: 50px;
+  }
+  .progress-bar {
+    display: flex;
+    gap: 6px;
+  }
+  .progress-segment {
+    flex: 1;
+    height: 3px;
+    background: var(--line-soft);
+    border-radius: 2px;
+    transition: background 0.4s ease;
+  }
+  .progress-segment.done { background: var(--amber); }
+  .progress-segment.current { background: var(--teal-700); }
+  .progress-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    font-size: 12px;
+    color: var(--ink-soft);
+    letter-spacing: 0.04em;
+  }
+  .progress-meta .step-num { font-family: 'Lora', serif; font-style: italic; color: var(--teal-700); }
+
+  /* QUESTION CARDS */
+  .question {
+    display: none;
+    animation: fadeUp 0.45s ease-out;
+  }
+  .question.active { display: block; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .q-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    color: var(--teal-700);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .q-eyebrow::before { content: ''; width: 22px; height: 1px; background: var(--teal-700); }
+
+  .q-title {
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.18;
+    letter-spacing: -0.015em;
+    margin-bottom: 14px;
+    color: var(--teal-900);
+  }
+  .q-title em { color: var(--amber); font-style: italic; }
+
+  .q-help {
+    font-size: 16px;
+    color: var(--ink-soft);
+    margin-bottom: 36px;
+    line-height: 1.6;
+  }
+
+  /* OPTIONS */
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .opt {
+    background: var(--bone);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 18px 22px;
+    font-size: 16px;
+    color: var(--ink);
+    cursor: pointer;
+    transition: all 0.18s ease;
+    text-align: left;
+    font-family: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .opt:hover {
+    border-color: var(--teal-700);
+    background: var(--teal-50);
+    transform: translateX(2px);
+  }
+  .opt.selected {
+    border-color: var(--teal-700);
+    background: var(--teal-50);
+    color: var(--teal-900);
+    font-weight: 500;
+  }
+  .opt-bullet {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.18s, background 0.18s;
+    box-sizing: border-box;
+  }
+  .opt.selected .opt-bullet {
+    border-color: var(--teal-700);
+    background: var(--teal-700);
+  }
+  .opt.selected .opt-bullet::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--bone);
+    border-radius: 50%;
+  }
+  /* Multi-select: real checkbox look — square + crisp checkmark (not radio circles) */
+  .opt.multi .opt-bullet {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    border-width: 2px;
+    background: var(--bone);
+  }
+  .opt.multi:hover .opt-bullet {
+    border-color: var(--teal-500);
+  }
+  .opt.multi.selected .opt-bullet {
+    border-color: var(--teal-700);
+    background: var(--teal-700);
+  }
+  /* Hide radio-dot for multi; show check instead */
+  .opt.multi.selected .opt-bullet::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 11px;
+    margin: 0;
+    padding: 0;
+    background: none !important;
+    border-radius: 0 !important;
+    border: solid var(--bone);
+    border-width: 0 2.5px 2.5px 0;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+  }
+
+  /* SLIDER */
+  .slider-shell {
+    margin: 24px 0 8px;
+  }
+  .slider-row { display: flex; align-items: center; gap: 16px; }
+  .slider-row span { font-size: 13px; color: var(--ink-soft); width: 18px; }
+  .pain-slider {
+    flex: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    background: linear-gradient(to right, var(--teal-100), var(--amber));
+    border-radius: 4px;
+    outline: none;
+  }
+  .pain-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px; height: 24px;
+    background: var(--bone);
+    border: 2px solid var(--teal-700);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(10,61,66,0.15);
+    transition: transform 0.15s;
+  }
+  .pain-slider::-webkit-slider-thumb:hover { transform: scale(1.15); }
+  .pain-slider::-moz-range-thumb {
+    width: 24px; height: 24px;
+    background: var(--bone);
+    border: 2px solid var(--teal-700);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .pain-display {
+    text-align: center;
+    margin: 32px 0 8px;
+  }
+  .pain-num {
+    font-family: 'Lora', serif;
+    font-size: 64px;
+    font-weight: 500;
+    color: var(--amber);
+    line-height: 1;
+    font-style: italic;
+  }
+  .pain-label {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-top: 8px;
+    font-style: italic;
+  }
+
+  /* TEXT INPUTS — for the contact step */
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+  .form-row label {
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+  .form-row label .req { color: var(--amber); }
+  .form-row input, .form-row textarea {
+    background: var(--bone);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 14px 16px;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--ink);
+    transition: border-color 0.15s;
+  }
+  .form-row input:focus, .form-row textarea:focus {
+    outline: none;
+    border-color: var(--teal-700);
+  }
+  .form-row textarea { resize: vertical; min-height: 100px; }
+  .form-row-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  @media (max-width: 540px) {
+    .form-row-grid { grid-template-columns: 1fr; }
+  }
+  .privacy-note {
+    background: var(--cloud);
+    border-radius: 6px;
+    padding: 14px 16px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    margin-top: 8px;
+    border-left: 3px solid var(--teal-700);
+  }
+
+  /* NAV BUTTONS */
+  .q-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line-soft);
+  }
+  .btn-back {
+    background: none;
+    border: none;
+    color: var(--ink-soft);
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.15s;
+  }
+  .btn-back:hover { color: var(--teal-700); }
+  .btn-back:disabled { opacity: 0.3; cursor: default; }
+
+  .btn-next {
+    background: var(--teal-900);
+    color: var(--bone);
+    border: none;
+    border-radius: 999px;
+    padding: 14px 26px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-next:hover:not(:disabled) {
+    background: var(--teal-700);
+    transform: translateY(-1px);
+  }
+  .btn-next:disabled {
+    background: var(--line);
+    color: var(--ink-soft);
+    cursor: not-allowed;
+  }
+  .btn-next svg { transition: transform 0.2s; }
+  .btn-next:hover:not(:disabled) svg { transform: translateX(3px); }
+  .btn-submit {
+    background: var(--amber);
+  }
+  .btn-submit:hover:not(:disabled) {
+    background: #b56908;
+  }
+
+  /* RESULTS */
+  .result-page { display: none; animation: fadeUp 0.6s ease-out; }
+  .result-page.active { display: block; }
+
+  .result-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    color: var(--amber);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .result-eyebrow::before {
+    content: '';
+    width: 22px; height: 1px; background: var(--amber);
+  }
+  .result-title {
+    font-size: clamp(32px, 4.5vw, 44px);
+    line-height: 1.1;
+    margin-bottom: 30px;
+    letter-spacing: -0.02em;
+  }
+  .result-title em { color: var(--amber); font-style: italic; }
+  .result-card {
+    background: var(--bone);
+    border: 1px solid var(--line-soft);
+    border-radius: 8px;
+    padding: 36px;
+    margin-bottom: 36px;
+    position: relative;
+  }
+  .result-card-eyebrow {
+    font-size: 11px;
+    color: var(--teal-700);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+  .result-text {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--ink);
+  }
+  .result-text p { margin-bottom: 16px; }
+  .result-text p:last-child { margin-bottom: 0; }
+  .result-text em { font-style: italic; color: var(--teal-700); }
+
+  .loading-shell {
+    text-align: center;
+    padding: 30px 0;
+  }
+  .loading-text {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--ink-soft);
+    margin-top: 24px;
+  }
+  .loading-dots { display: inline-flex; gap: 6px; }
+  .loading-dot {
+    width: 8px; height: 8px;
+    background: var(--amber);
+    border-radius: 50%;
+    animation: pulse-dot 1.4s ease-in-out infinite;
+  }
+  .loading-dot:nth-child(2) { animation-delay: 0.2s; }
+  .loading-dot:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes pulse-dot {
+    0%, 80%, 100% { opacity: 0.25; transform: scale(0.85); }
+    40% { opacity: 1; transform: scale(1); }
+  }
+
+  .next-steps {
+    background: var(--teal-900);
+    color: var(--bone);
+    border-radius: 8px;
+    padding: 36px;
+    margin-bottom: 36px;
+  }
+  .next-steps h3 {
+    color: var(--bone);
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+  .next-steps h3 em { color: var(--amber-soft); font-style: italic; }
+  .next-steps p {
+    color: rgba(250,248,243,0.78);
+    font-size: 15px;
+    line-height: 1.65;
+    margin-bottom: 24px;
+  }
+  .next-actions { display: flex; flex-direction: column; gap: 10px; }
+  .next-action {
+    background: rgba(250,248,243,0.06);
+    border: 1px solid rgba(250,248,243,0.15);
+    border-radius: 6px;
+    padding: 16px 20px;
+    color: var(--bone);
+    font-size: 15px;
+    text-decoration: none;
+    transition: background 0.15s, border-color 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    border: 1px solid rgba(250,248,243,0.15);
+  }
+  .next-action:hover {
+    background: rgba(250,248,243,0.1);
+    border-color: var(--amber-soft);
+  }
+  .next-action svg { color: var(--amber-soft); flex-shrink: 0; }
+  button.next-action {
+    width: 100%;
+    font: inherit;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    text-align: left;
+  }
+  .next-action.primary {
+    background: var(--amber);
+    border-color: var(--amber);
+  }
+  .next-action.primary:hover:not(:disabled) {
+    background: #b56908;
+  }
+  .next-action.primary:disabled {
+    opacity: 0.92;
+    cursor: wait;
+  }
+  .next-action.primary svg { color: var(--bone); }
+
+  .consult-alt {
+    font-size: 13px;
+    color: rgba(250, 248, 243, 0.72);
+    line-height: 1.55;
+    margin: -2px 0 6px;
+    padding: 0 4px 12px;
+    border-bottom: 1px solid rgba(250, 248, 243, 0.12);
+  }
+  .consult-alt a {
+    color: var(--amber-soft);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .consult-alt a:hover {
+    color: var(--bone);
+  }
+
+  .consult-request-sent {
+    background: rgba(250, 248, 243, 0.12);
+    border: 1px solid rgba(250, 248, 243, 0.22);
+    border-radius: 6px;
+    padding: 18px 20px;
+    margin-bottom: 10px;
+  }
+  .consult-request-sent__title {
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--bone);
+    margin: 0 0 10px;
+    line-height: 1.35;
+  }
+  .consult-request-sent__body {
+    font-size: 14px;
+    color: rgba(250, 248, 243, 0.88);
+    margin: 0 0 14px;
+    line-height: 1.6;
+  }
+  .consult-request-sent__body a {
+    color: var(--amber-soft);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .consult-request-sent__body a:hover {
+    color: var(--bone);
+  }
+  .consult-request-sent__contact {
+    font-size: 14px;
+    color: rgba(250, 248, 243, 0.9);
+    margin: 0;
+    line-height: 1.55;
+    padding-top: 12px;
+    border-top: 1px solid rgba(250, 248, 243, 0.15);
+  }
+  .consult-request-sent__contact a {
+    color: var(--amber-soft);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .consult-request-sent__contact a:hover {
+    color: var(--bone);
+  }
+
+  .disclaimer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-top: 30px;
+    font-style: italic;
+  }
+
+  .restart-row { text-align: center; margin-top: 30px; }
+  .restart-link {
+    color: var(--ink-soft);
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-color: var(--line);
+    text-underline-offset: 4px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: inherit;
+  }
+  .restart-link:hover { color: var(--teal-700); text-decoration-color: var(--teal-700); }
+
+  /* FOOTER */
+  footer {
+    background: var(--cloud);
+    border-top: 1px solid var(--line-soft);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+  footer p { line-height: 1.6; max-width: 600px; margin: 0 auto; padding: 0 32px; }
+</style>
+</head>
+<body>
+
+<!-- MINIMAL NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <img class="logo-lockup" src="brand/logos/08-horizontal-single-line-primary.svg" alt="Valley Joint Pain Center" width="200" height="60" decoding="async" />
+    </a>
+    <a href="index.html" class="nav-back">← Back to site</a>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main>
+<div class="wrap">
+
+  <!-- PROGRESS -->
+  <div class="progress-shell" id="progressShell">
+    <div class="progress-bar" id="progressBar">
+      <div class="progress-segment current"></div>
+      <div class="progress-segment"></div>
+      <div class="progress-segment"></div>
+      <div class="progress-segment"></div>
+      <div class="progress-segment"></div>
+      <div class="progress-segment"></div>
+    </div>
+    <div class="progress-meta">
+      <span><span class="step-num" id="stepNum">01</span> of 06</span>
+      <span id="timeEstimate">~2 minutes</span>
+    </div>
+  </div>
+
+  <!-- ═══════ Q1 — Pain location ═══════ -->
+  <div class="question active" id="q1">
+    <div class="q-eyebrow">Question one</div>
+    <h2 class="q-title">Where is your <em>pain</em> coming from?</h2>
+    <p class="q-help">Pick the area that bothers you most. If you have pain in multiple places, you'll be able to tell us in a moment.</p>
+    <div class="options">
+      <button class="opt" onclick="selectSingle(this, 'area', 'Right knee')"><span class="opt-bullet"></span><span>Right knee</span></button>
+      <button class="opt" onclick="selectSingle(this, 'area', 'Left knee')"><span class="opt-bullet"></span><span>Left knee</span></button>
+      <button class="opt" onclick="selectSingle(this, 'area', 'Both knees')"><span class="opt-bullet"></span><span>Both knees</span></button>
+      <button class="opt" onclick="selectSingle(this, 'area', 'Hip')"><span class="opt-bullet"></span><span>Hip</span></button>
+      <button class="opt" onclick="selectSingle(this, 'area', 'Shoulder')"><span class="opt-bullet"></span><span>Shoulder</span></button>
+      <button class="opt" onclick="selectSingle(this, 'area', 'Multiple joints')"><span class="opt-bullet"></span><span>Multiple joints (knee + others)</span></button>
+    </div>
+    <div class="q-nav">
+      <button class="btn-back" disabled>← Back</button>
+      <button class="btn-next" id="next1" disabled onclick="goTo(2)">Next <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 6h13M9 1l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+
+  <!-- ═══════ Q2 — Duration ═══════ -->
+  <div class="question" id="q2">
+    <div class="q-eyebrow">Question two</div>
+    <h2 class="q-title">How long has this <em>been going on</em>?</h2>
+    <p class="q-help">Chronic pain — pain that's lasted longer than a few months — responds to treatment differently than recent pain.</p>
+    <div class="options">
+      <button class="opt" onclick="selectSingle(this, 'duration', 'Less than 3 months')"><span class="opt-bullet"></span><span>Less than 3 months</span></button>
+      <button class="opt" onclick="selectSingle(this, 'duration', '3 to 12 months')"><span class="opt-bullet"></span><span>3 to 12 months</span></button>
+      <button class="opt" onclick="selectSingle(this, 'duration', '1 to 3 years')"><span class="opt-bullet"></span><span>1 to 3 years</span></button>
+      <button class="opt" onclick="selectSingle(this, 'duration', 'More than 3 years')"><span class="opt-bullet"></span><span>More than 3 years</span></button>
+    </div>
+    <div class="q-nav">
+      <button class="btn-back" onclick="goTo(1)">← Back</button>
+      <button class="btn-next" id="next2" disabled onclick="goTo(3)">Next <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 6h13M9 1l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+
+  <!-- ═══════ Q3 — Pain severity ═══════ -->
+  <div class="question" id="q3">
+    <div class="q-eyebrow">Question three</div>
+    <h2 class="q-title">How bad is the pain on an <em>average day</em>?</h2>
+    <p class="q-help">1 means it barely registers. 10 means it stops you from doing things you'd otherwise be doing.</p>
+    <div class="pain-display">
+      <div class="pain-num" id="painNum">5</div>
+      <div class="pain-label" id="painLabel">Moderate, noticeable but manageable</div>
+    </div>
+    <div class="slider-shell">
+      <div class="slider-row">
+        <span>1</span>
+        <input type="range" id="painSlider" class="pain-slider" min="1" max="10" value="5" step="1" />
+        <span>10</span>
+      </div>
+    </div>
+    <div class="q-nav">
+      <button class="btn-back" onclick="goTo(2)">← Back</button>
+      <button class="btn-next" onclick="goTo(4)">Next <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 6h13M9 1l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+
+  <!-- ═══════ Q4 — Treatments tried ═══════ -->
+  <div class="question" id="q4">
+    <div class="q-eyebrow">Question four</div>
+    <h2 class="q-title">What have you <em>already tried</em>?</h2>
+    <p class="q-help">Select all that apply. There's no judgment here — patients who've cycled through multiple treatments often turn out to be the best candidates for what we offer.</p>
+    <div class="options">
+      <button class="opt multi" onclick="toggleMulti(this, 'Physical therapy')"><span class="opt-bullet"></span><span>Physical therapy</span></button>
+      <button class="opt multi" onclick="toggleMulti(this, 'Pain medications')"><span class="opt-bullet"></span><span>Pain medications (NSAIDs, acetaminophen, etc.)</span></button>
+      <button class="opt multi" onclick="toggleMulti(this, 'Cortisone injections')"><span class="opt-bullet"></span><span>Cortisone or steroid injections</span></button>
+      <button class="opt multi" onclick="toggleMulti(this, 'Hyaluronic acid injections')"><span class="opt-bullet"></span><span>Hyaluronic acid injections (Synvisc, Euflexxa, etc.)</span></button>
+      <button class="opt multi" onclick="toggleMulti(this, 'Brace or assistive device')"><span class="opt-bullet"></span><span>Knee brace or assistive device</span></button>
+      <button class="opt multi" onclick="toggleMulti(this, 'PRP or stem cell injections')"><span class="opt-bullet"></span><span>PRP or stem cell injections</span></button>
+      <button class="opt multi" onclick="toggleMulti(this, 'Previous knee surgery')"><span class="opt-bullet"></span><span>Previous surgery on this joint</span></button>
+      <button class="opt multi" onclick="toggleMulti(this, 'Nothing yet')"><span class="opt-bullet"></span><span>Nothing yet — still figuring out next steps</span></button>
+    </div>
+    <div class="q-nav">
+      <button class="btn-back" onclick="goTo(3)">← Back</button>
+      <button class="btn-next" onclick="goTo(5)">Next <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 6h13M9 1l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+
+  <!-- ═══════ Q5 — Surgery question ═══════ -->
+  <div class="question" id="q5">
+    <div class="q-eyebrow">Question five</div>
+    <h2 class="q-title">Has anyone <em>told you</em> you might need surgery?</h2>
+    <p class="q-help">There's no wrong answer here — we just want to understand where you are in the conversation.</p>
+    <div class="options">
+      <button class="opt" onclick="selectSingle(this, 'surgery', 'Recommended but not ready')"><span class="opt-bullet"></span><span>Yes, but I'm not ready for it</span></button>
+      <button class="opt" onclick="selectSingle(this, 'surgery', 'Recommended and considering')"><span class="opt-bullet"></span><span>Yes, and I'm seriously considering it</span></button>
+      <button class="opt" onclick="selectSingle(this, 'surgery', 'Told too young')"><span class="opt-bullet"></span><span>I was told I'm too young or too healthy for surgery</span></button>
+      <button class="opt" onclick="selectSingle(this, 'surgery', 'Not eligible due to other conditions')"><span class="opt-bullet"></span><span>I'm not a surgical candidate due to other health issues</span></button>
+      <button class="opt" onclick="selectSingle(this, 'surgery', 'No discussion yet')"><span class="opt-bullet"></span><span>It hasn't come up yet — I'm exploring options</span></button>
+      <button class="opt" onclick="selectSingle(this, 'surgery', 'Already had surgery')"><span class="opt-bullet"></span><span>I've already had surgery, looking for next options</span></button>
+    </div>
+    <div class="q-nav">
+      <button class="btn-back" onclick="goTo(4)">← Back</button>
+      <button class="btn-next" id="next5" disabled onclick="goTo(6)">Next <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 6h13M9 1l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+
+  <!-- ═══════ Q6 — Contact info ═══════ -->
+  <div class="question" id="q6">
+    <div class="q-eyebrow">Final step</div>
+    <h2 class="q-title">Where should we send your <em>personalized response</em>?</h2>
+    <p class="q-help">Your assessment is generated using the answers you've provided so far. We'll show you the result on the next screen — and if you'd like, we can also email you a copy and have our office reach out to schedule a consultation.</p>
+
+    <div class="form-row">
+      <label>First name <span class="req">*</span></label>
+      <input type="text" id="firstName" placeholder="Your first name" required />
+    </div>
+    <div class="form-row-grid">
+      <div class="form-row">
+        <label>Email <span class="req">*</span></label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+      </div>
+      <div class="form-row">
+        <label>Phone (optional)</label>
+        <input type="tel" id="phone" placeholder="(818) 418-8165" />
+      </div>
+    </div>
+    <div class="form-row">
+      <label>Anything specific you'd like Dr. Dhand to know? (optional)</label>
+      <textarea id="notes" placeholder="e.g., 'I've had three cortisone shots and they used to last six months but the most recent one barely worked.'"></textarea>
+    </div>
+
+    <div class="privacy-note">
+      <strong>Your information is private.</strong> We follow HIPAA standards. Your responses go only to Dr. Dhand's office — never sold, never shared, never used for marketing without your explicit consent.
+    </div>
+
+    <div class="q-nav">
+      <button class="btn-back" onclick="goTo(5)">← Back</button>
+      <button class="btn-next btn-submit" id="submitBtn" onclick="submitQuiz()">See my results <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 6h13M9 1l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+
+  <!-- ═══════ RESULTS ═══════ -->
+  <div class="result-page" id="results">
+    <div class="result-eyebrow" id="resultEyebrow">Your assessment</div>
+    <h1 class="result-title" id="resultTitle">Thank you, <em id="resultName">friend</em>.</h1>
+
+    <div class="result-card">
+      <div class="result-card-eyebrow">Thank you · Dr. Dhand's office</div>
+      <div id="resultBody">
+        <div class="loading-shell">
+          <div class="loading-dots">
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+          </div>
+          <div class="loading-text" id="loadingText">Reviewing your responses...</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="next-steps" id="nextSteps" style="display: none;">
+      <h3>What happens <em>next</em>?</h3>
+      <p>Based on your responses, here are the steps we'd suggest. There's no obligation, and no charge to explore your options.</p>
+      <div class="next-actions">
+        <button
+          type="button"
+          id="consultationRequestBtn"
+          class="next-action primary"
+          aria-label="Request a free consultation; our office will be notified"
+          onclick="handleConsultationRequest(event)"
+        >
+          <span><strong>Request a free consultation</strong> — review your imaging with Dr. Dhand</span>
+        </button>
+        <div id="consultationRequestSent" class="consult-request-sent" hidden>
+          <p class="consult-request-sent__title" id="consultationSentTitle">Your request has been sent.</p>
+          <p class="consult-request-sent__body" id="consultationSentBody"></p>
+          <p class="consult-request-sent__contact">
+            <strong><a href="tel:+18184188165">(818) 418-8165</a></strong> · Mon–Fri 8:30am–5pm ·
+            <a href="location.html">Van Nuys office &amp; directions</a>
+          </p>
+        </div>
+        <p class="consult-alt" id="consultationInlineHint">
+          <strong>(818) 418-8165</strong> · Mon–Fri 8:30am–5pm ·
+          <a href="location.html">Van Nuys office &amp; directions</a>
+        </p>
+        <a href="genicular-artery-embolization.html" class="next-action">
+          <span>Read more about Genicular Artery Embolization</span>
+          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 6h13M9 1l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="about-dr-sabeen-dhand.html" class="next-action">
+          <span>Learn about Dr. Dhand's background</span>
+          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 6h13M9 1l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <p class="disclaimer">This assessment is not medical advice. It's a starting point for a conversation. Final candidacy for any procedure is determined through clinical evaluation, including review of imaging and a complete medical history.</p>
+
+    <div class="restart-row">
+      <button class="restart-link" onclick="restartQuiz()">Start the assessment over</button>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<footer>
+  <p>© 2026 Valley Joint Pain Center · Van Nuys, California · valleyjointpain.com</p>
+</footer>
+
+<script>
+  /* ═══════ STATE ═══════ */
+  const answers = {
+    area: '',
+    duration: '',
+    pain: 5,
+    treatments: [],
+    surgery: '',
+    firstName: '',
+    email: '',
+    phone: '',
+    notes: ''
+  };
+  let currentStep = 1;
+  const totalSteps = 6;
+
+  /* ═══════ NAVIGATION ═══════ */
+  function goTo(n) {
+    document.querySelectorAll('.question').forEach(q => q.classList.remove('active'));
+    document.getElementById('q' + n).classList.add('active');
+    currentStep = n;
+    updateProgress();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function updateProgress() {
+    const segments = document.querySelectorAll('.progress-segment');
+    segments.forEach((seg, i) => {
+      seg.classList.remove('done', 'current');
+      if (i < currentStep - 1) seg.classList.add('done');
+      else if (i === currentStep - 1) seg.classList.add('current');
+    });
+    document.getElementById('stepNum').textContent = String(currentStep).padStart(2, '0');
+    if (currentStep === 6) {
+      document.getElementById('timeEstimate').textContent = 'Almost done';
+    }
+  }
+
+  /* ═══════ INPUT HANDLERS ═══════ */
+  function selectSingle(btn, key, value) {
+    const parent = btn.closest('.options');
+    parent.querySelectorAll('.opt').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    answers[key] = value;
+    // Enable the "next" button on this question
+    const q = btn.closest('.question');
+    const nextBtn = q.querySelector('.btn-next:not([disabled])') || q.querySelector('.btn-next');
+    if (nextBtn) nextBtn.disabled = false;
+  }
+
+  function toggleMulti(btn, value) {
+    btn.classList.toggle('selected');
+    if (btn.classList.contains('selected')) {
+      // If "Nothing yet" is selected, clear other selections (and vice versa)
+      if (value === 'Nothing yet') {
+        document.querySelectorAll('#q4 .opt.selected').forEach(b => {
+          if (b !== btn) b.classList.remove('selected');
+        });
+        answers.treatments = ['Nothing yet'];
+      } else {
+        // If anything else is selected, clear "Nothing yet"
+        document.querySelectorAll('#q4 .opt').forEach(b => {
+          if (b.querySelector('span:last-child').textContent.includes('Nothing yet') && b.classList.contains('selected')) {
+            b.classList.remove('selected');
+          }
+        });
+        answers.treatments = answers.treatments.filter(t => t !== 'Nothing yet');
+        if (!answers.treatments.includes(value)) answers.treatments.push(value);
+      }
+    } else {
+      answers.treatments = answers.treatments.filter(t => t !== value);
+    }
+  }
+
+  /* Pain slider */
+  const painSlider = document.getElementById('painSlider');
+  const painNum = document.getElementById('painNum');
+  const painLabel = document.getElementById('painLabel');
+  const painLabels = {
+    1: 'Mild · barely registers',
+    2: 'Mild · occasional reminder',
+    3: 'Mild-to-moderate',
+    4: 'Moderate · uncomfortable',
+    5: 'Moderate · noticeable but manageable',
+    6: 'Moderate-to-severe',
+    7: 'Severe · interfering with daily activities',
+    8: 'Severe · limiting most activities',
+    9: 'Severe · debilitating',
+    10: 'Extreme · cannot function normally'
+  };
+  painSlider.addEventListener('input', (e) => {
+    const val = parseInt(e.target.value);
+    answers.pain = val;
+    painNum.textContent = val;
+    painLabel.textContent = painLabels[val];
+  });
+
+  /* ═══════ SUBMISSION ═══════ */
+  async function submitQuiz() {
+    const firstName = document.getElementById('firstName').value.trim();
+    const email = document.getElementById('email').value.trim();
+
+    if (!firstName) {
+      alert('Please enter your first name.');
+      document.getElementById('firstName').focus();
+      return;
+    }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      alert('Please enter a valid email address.');
+      document.getElementById('email').focus();
+      return;
+    }
+
+    answers.firstName = firstName;
+    answers.email = email;
+    answers.phone = document.getElementById('phone').value.trim();
+    answers.notes = document.getElementById('notes').value.trim();
+
+    if (!answers.area || !answers.duration || !answers.surgery) {
+      alert('Please complete each question before submitting.');
+      return;
+    }
+
+    // Disable submit and show loading
+    document.getElementById('submitBtn').disabled = true;
+    document.getElementById('progressShell').style.display = 'none';
+    document.querySelectorAll('.question').forEach(q => q.classList.remove('active'));
+    document.getElementById('results').classList.add('active');
+    document.getElementById('resultName').textContent = firstName;
+
+    const loadingMessages = [
+      'Saving your responses...',
+      'Sending to our team...',
+      'Almost done...'
+    ];
+    let msgIdx = 0;
+    const loadingInterval = setInterval(() => {
+      msgIdx = (msgIdx + 1) % loadingMessages.length;
+      document.getElementById('loadingText').textContent = loadingMessages[msgIdx];
+    }, 1800);
+
+    const treatments = answers.treatments.length ? answers.treatments.join(', ') : 'none indicated';
+    const params = new URLSearchParams(window.location.search);
+
+    try {
+      const res = await fetch('/api/submit-assessment', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          firstName,
+          email,
+          phone: answers.phone,
+          painArea: answers.area,
+          painDuration: answers.duration,
+          painScore: answers.pain,
+          treatmentsTried: treatments,
+          surgerySituation: answers.surgery,
+          patientNotes: answers.notes,
+          utm_source: params.get('utm_source') || 'assessment page'
+        })
+      });
+
+      const data = await res.json().catch(() => ({}));
+      clearInterval(loadingInterval);
+
+      if (!res.ok) {
+        throw new Error(data.error || data.details || 'Could not save your assessment.');
+      }
+
+      renderResult(generateFallback(firstName));
+    } catch (err) {
+      clearInterval(loadingInterval);
+      console.error('Assessment submit failed:', err);
+      document.getElementById('results').classList.remove('active');
+      document.getElementById('progressShell').style.display = 'block';
+      document.querySelectorAll('.question').forEach(q => q.classList.remove('active'));
+      document.getElementById('q6').classList.add('active');
+      currentStep = 6;
+      updateProgress();
+      document.getElementById('submitBtn').disabled = false;
+      document.getElementById('resultBody').innerHTML = `<div class="loading-shell"><div class="loading-dots"><div class="loading-dot"></div><div class="loading-dot"></div><div class="loading-dot"></div></div><div class="loading-text" id="loadingText">Reviewing your responses...</div></div>`;
+      alert(err.message || 'Something went wrong. Please try again.');
+    }
+  }
+
+  function generateFallback(firstName) {
+    return `${firstName}, thank you for taking the time to share what you're dealing with.
+
+Based on what you've described, you may be a good candidate to explore minimally invasive options like Genicular Artery Embolization or other image-guided procedures we offer. The pattern you've described — ongoing pain that hasn't fully resolved with conservative care — is one we see often in patients who turn out to be excellent candidates for these treatments.
+
+The most useful next step would be a brief consultation where Dr. Dhand can review any imaging you have, walk through your medical history in detail, and give you an honest assessment of which options (if any) make sense for your specific situation. There's no charge for the initial consultation, and there's no obligation to proceed with anything afterward.
+
+Our office will be in touch shortly to discuss scheduling.
+
+— Dr. Dhand's office at Valley Joint Pain Center`;
+  }
+
+  function renderResult(text) {
+    const formatted = text
+      .split('\n\n')
+      .filter(p => p.trim())
+      .map(p => `<p>${escapeHtml(p.trim())}</p>`)
+      .join('');
+
+    document.getElementById('resultBody').innerHTML = `<div class="result-text">${formatted}</div>`;
+    document.getElementById('nextSteps').style.display = 'block';
+    resetConsultationRequestUi();
+  }
+
+  function resetConsultationRequestUi() {
+    const btn = document.getElementById('consultationRequestBtn');
+    const sent = document.getElementById('consultationRequestSent');
+    const hint = document.getElementById('consultationInlineHint');
+    if (sent) {
+      sent.hidden = true;
+      const body = document.getElementById('consultationSentBody');
+      if (body) body.textContent = '';
+      const title = document.getElementById('consultationSentTitle');
+      if (title) title.textContent = 'Your request has been sent.';
+    }
+    if (hint) hint.style.display = '';
+    if (btn) {
+      btn.style.display = '';
+      btn.disabled = false;
+      if (btn.dataset.origHtml) btn.innerHTML = btn.dataset.origHtml;
+    }
+  }
+
+  async function handleConsultationRequest(ev) {
+    ev.preventDefault();
+    const btn = document.getElementById('consultationRequestBtn');
+    const sent = document.getElementById('consultationRequestSent');
+    const hint = document.getElementById('consultationInlineHint');
+    const title = document.getElementById('consultationSentTitle');
+    const body = document.getElementById('consultationSentBody');
+    if (!btn || btn.disabled) return;
+    if (!btn.dataset.origHtml) btn.dataset.origHtml = btn.innerHTML;
+
+    btn.disabled = true;
+    const span = btn.querySelector('span');
+    if (span) {
+      span.innerHTML = '<strong>Sending your request…</strong>';
+    }
+
+    let ok = false;
+    try {
+      const res = await fetch('/api/notify-consultation-request', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          firstName: answers.firstName || '',
+          email: answers.email || '',
+          phone: answers.phone || ''
+        })
+      });
+      ok = res.ok;
+    } catch (err) {
+      console.error('Consultation notify failed:', err);
+    }
+
+    btn.style.display = 'none';
+    if (hint) hint.style.display = 'none';
+    if (sent) sent.hidden = false;
+    if (title) title.textContent = ok ? 'Your request has been sent.' : 'We could not confirm your request online.';
+    if (body) {
+      if (ok) {
+        body.innerHTML =
+          'Our office has been notified that you&rsquo;d like a consultation. Someone will follow up soon.';
+      } else {
+        body.innerHTML =
+          'We couldn&rsquo;t confirm that online. Please call or use the office link below.';
+      }
+    }
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function restartQuiz() {
+    Object.keys(answers).forEach(k => { answers[k] = (k === 'treatments') ? [] : (k === 'pain' ? 5 : ''); });
+    document.querySelectorAll('.opt').forEach(b => b.classList.remove('selected'));
+    document.querySelectorAll('input, textarea').forEach(el => el.value = '');
+    document.getElementById('painSlider').value = 5;
+    painNum.textContent = '5';
+    painLabel.textContent = painLabels[5];
+    document.getElementById('next1').disabled = true;
+    document.getElementById('next2').disabled = true;
+    document.getElementById('next5').disabled = true;
+    document.getElementById('submitBtn').disabled = false;
+    document.getElementById('results').classList.remove('active');
+    document.getElementById('progressShell').style.display = 'block';
+    document.getElementById('resultBody').innerHTML = `<div class="loading-shell"><div class="loading-dots"><div class="loading-dot"></div><div class="loading-dot"></div><div class="loading-dot"></div></div><div class="loading-text" id="loadingText">Reviewing your responses...</div></div>`;
+    document.getElementById('nextSteps').style.display = 'none';
+    resetConsultationRequestUi();
+    goTo(1);
+  }
+
+  (function initConsultationBtnSnapshot() {
+    const btn = document.getElementById('consultationRequestBtn');
+    if (btn && !btn.dataset.origHtml) btn.dataset.origHtml = btn.innerHTML;
+  })();
+</script>
+
+</body>
+</html>

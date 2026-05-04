@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 600" width="1050" height="600">
+  <title>Valley Joint Pain Center business card — front</title>
+  <desc>Standard 3.5x2 inch business card, 300dpi.</desc>
+
+  <rect width="1050" height="600" fill="#faf8f3"/>
+
+  <!-- Mark -->
+  <g transform="translate(110, 130)">
+    <path d="M 0 -36 Q -29 -36 -29 -7 L -29 7 Q -29 36 0 36" stroke="#0a3d42" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 13 -36 Q 42 -36 42 -7 L 42 7 Q 42 36 13 36" stroke="#0a3d42" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="6.5" cy="0" r="6" fill="#c8780a"/>
+  </g>
+  <text x="190" y="120" font-family="Lora, Georgia, serif" font-weight="500" font-size="42" fill="#0a3d42">Valley</text>
+  <text x="190" y="170" font-family="Lora, Georgia, serif" font-weight="400" font-style="italic" font-size="42" fill="#0d5c63">Joint Pain</text>
+
+  <line x1="110" y1="240" x2="940" y2="240" stroke="#d8d3c7" stroke-width="1"/>
+
+  <text x="110" y="320" font-family="Lora, Georgia, serif" font-weight="500" font-size="38" fill="#15201f">Dr. ____ ____, MD</text>
+  <text x="110" y="355" font-family="DM Sans, system-ui, sans-serif" font-weight="500" font-size="14" fill="#4a5957" letter-spacing="2">BOARD-CERTIFIED INTERVENTIONAL RADIOLOGIST</text>
+
+  <text x="110" y="450" font-family="DM Sans, system-ui, sans-serif" font-size="18" fill="#4a5957">(818) 555-0123 · doctor@valleyjointpain.com</text>
+  <text x="110" y="480" font-family="DM Sans, system-ui, sans-serif" font-size="18" fill="#4a5957">14411 Hamlin St · Van Nuys, CA 91401</text>
+  <text x="110" y="510" font-family="DM Sans, system-ui, sans-serif" font-size="18" fill="#4a5957">valleyjointpain.com</text>
+</svg>
