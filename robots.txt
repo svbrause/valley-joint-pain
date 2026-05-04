@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Point crawlers to the sitemap
-Sitemap: https://valleyjointpain.com/sitemap.xml
+Sitemap: https://www.valleyjointpain.com/sitemap.xml
 
 # Block crawlers from assets that add no SEO value
 Disallow: /assets/
