@@ -13,8 +13,15 @@
 <link rel="canonical" href="https://valleyjointpain.com/location" />
 
 <meta property="og:type" content="website" />
+<meta property="og:url" content="https://valleyjointpain.com/location" />
 <meta property="og:title" content="Valley Joint Pain Center — Location &amp; Directions, Van Nuys CA" />
 <meta property="og:description" content="Located at 14411 Hamlin St, Van Nuys, CA 91401. Free parking, ground-floor access. Serving the entire San Fernando Valley." />
+<meta property="og:image" content="https://valleyjointpain.com/brand/templates/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Valley Joint Pain Center — knee pain relief without surgery" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://valleyjointpain.com/brand/templates/og-image.png" />
 
 <!-- BreadcrumbList schema -->
 <script type="application/ld+json">
@@ -105,8 +112,8 @@
   .wrap-narrow { max-width: 780px; margin: 0 auto; padding: 0 32px; }
 
   /* NAV */
-  nav { position: sticky; top: 0; z-index: 100; background: rgba(250,248,243,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line-soft); }
-  .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+  nav { position: sticky; top: 0; z-index: 200; background: rgba(250,248,243,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line-soft); }
+  .nav-inner { position: relative; z-index: 3; display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
   .logo { display: flex; align-items: center; gap: 12px; }
   .logo-lockup { height: 52px; width: auto; display: block; flex-shrink: 0; }
   footer .logo .logo-lockup { height: 60px; }
@@ -116,6 +123,88 @@
   .nav-links a.active { color: var(--teal-900); font-weight: 500; }
   .nav-cta { background: var(--teal-900); color: var(--bone) !important; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 500; }
   .nav-cta:hover { background: var(--teal-700) !important; }
+  .menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--teal-900);
+    padding: 8px;
+    margin: -8px -8px -8px 0;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: background 0.15s;
+  }
+  .menu-btn:hover { background: rgba(10, 61, 66, 0.06); }
+  .menu-btn svg { display: block; }
+  .menu-btn .icon-close { display: none; }
+  .menu-btn[aria-expanded="true"] .icon-menu { display: none; }
+  .menu-btn[aria-expanded="true"] .icon-close { display: block; }
+  .nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: transparent;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .nav-overlay.visible { display: block; }
+  .nav-drawer {
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid var(--line-soft);
+    background: rgba(250, 248, 243, 0.97);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    animation: navDrawerSlideDown 0.2s ease;
+  }
+  .nav-drawer[hidden] { display: none !important; }
+  @keyframes navDrawerSlideDown {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .nav-drawer-inner {
+    padding-top: 8px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-drawer-inner a {
+    font-size: 15px;
+    color: var(--ink-soft);
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line-soft);
+    transition: color 0.15s;
+  }
+  .nav-drawer-inner a:last-child { border-bottom: none; }
+  .nav-drawer-inner a:hover { color: var(--teal-700); }
+  .nav-drawer-inner a.nav-drawer-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    text-align: center;
+    margin: 12px 0 28px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--bone) !important;
+    background: var(--teal-900) !important;
+    border-radius: 999px;
+    border-bottom: none !important;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+  }
+  .nav-drawer-inner a.nav-drawer-cta:hover {
+    background: var(--teal-700) !important;
+    color: var(--bone) !important;
+  }
+  @media (min-width: 901px) {
+    .nav-drawer { display: none !important; }
+  }
 
   /* BREADCRUMB */
   .breadcrumb { padding: 24px 0 0; font-size: 13px; color: var(--ink-soft); }
@@ -231,8 +320,41 @@
   .footer-bottom { padding-top: 30px; border-top: 1px solid rgba(250,248,243,0.12); display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: rgba(250,248,243,0.5); flex-wrap: wrap; gap: 16px; }
 
   @media (max-width: 900px) {
+    html { scroll-padding-top: 92px; }
+    body { padding-top: 92px; }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      box-shadow: 0 1px 0 rgba(10, 61, 66, 0.06);
+    }
     .wrap { padding: 0 24px; }
-    .nav-links a:not(.nav-cta) { display: none; }
+    .nav-inner {
+      gap: 12px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .logo { flex: 1; min-width: 0; margin-right: auto; }
+    .logo-lockup {
+      height: 60px;
+      max-width: min(92vw, 560px);
+      width: auto;
+      object-fit: contain;
+      object-position: left center;
+    }
+    .nav-links { display: none; }
+    .menu-btn {
+      display: inline-flex;
+      width: 44px;
+      height: 44px;
+      margin: 0;
+      padding: 6px;
+    }
+    .nav-drawer-inner { padding-top: 6px; padding-bottom: 36px; }
+    .nav-drawer-inner a { padding-top: 14px; padding-bottom: 14px; }
+    .nav-drawer-inner a.nav-drawer-cta { margin: 10px 0 24px; padding: 12px 18px; }
     .location-grid { grid-template-columns: 1fr; gap: 40px; }
     .info-cells { grid-template-columns: 1fr; }
     .neighborhoods-grid { grid-template-columns: 1fr 1fr; }
@@ -260,7 +382,22 @@
       <a href="index.html#faq">FAQ</a>
       <a href="assessment.html" class="nav-cta">Take the Assessment</a>
     </div>
+    <button type="button" class="menu-btn" id="navMenuBtn" aria-expanded="false" aria-controls="navDrawer" aria-label="Open menu">
+      <svg class="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+      <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" /></svg>
+    </button>
   </div>
+  <div class="nav-drawer" id="navDrawer" hidden>
+    <div class="wrap nav-drawer-inner">
+      <a href="index.html#procedures">Procedures</a>
+      <a href="about-dr-sabeen-dhand.html">Providers</a>
+      <a href="location.html">Location</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="valleyjointpain-insurance-billing.html">Insurance &amp; billing</a>
+      <a href="assessment.html" class="nav-drawer-cta">Take the Assessment</a>
+    </div>
+  </div>
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
 </nav>
 
 <!-- BREADCRUMB -->
@@ -594,6 +731,30 @@
     </div>
   </div>
 </footer>
+
+<script>
+(function () {
+  const btn = document.getElementById("navMenuBtn");
+  const drawer = document.getElementById("navDrawer");
+  const overlay = document.getElementById("navOverlay");
+  if (!btn || !drawer) return;
+  function setOpen(open) {
+    drawer.hidden = !open;
+    btn.setAttribute("aria-expanded", String(open));
+    btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    if (overlay) overlay.classList.toggle("visible", open);
+    document.body.style.overflow = open ? "hidden" : "";
+  }
+  btn.addEventListener("click", () => setOpen(drawer.hidden));
+  if (overlay) overlay.addEventListener("click", () => setOpen(false));
+  drawer.querySelectorAll("a").forEach((a) => {
+    a.addEventListener("click", () => setOpen(false));
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") setOpen(false);
+  });
+})();
+</script>
 
 </body>
 </html>

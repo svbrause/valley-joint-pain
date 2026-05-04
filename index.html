@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      href="brand/favicon/favicon.svg"
-      type="image/svg+xml"
-    />
+    <link rel="icon" href="brand/favicon/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="brand/favicon/favicon.svg" />
     <title>
       Valley Joint Pain Center — Knee pain relief without surgery, San Fernando
@@ -18,12 +14,48 @@
       content="Non-surgical knee pain treatment in the San Fernando Valley. Genicular Artery Embolization (GAE) and other minimally invasive procedures. Located in Van Nuys, CA. Take our 2-minute assessment."
     />
 
+    <!-- Open Graph / iMessage link preview (raster image; crawlers ignore SVG here) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://valleyjointpain.com/" />
+    <meta
+      property="og:title"
+      content="Valley Joint Pain Center — Knee pain relief without surgery, San Fernando Valley"
+    />
+    <meta
+      property="og:description"
+      content="Non-surgical knee pain treatment in the San Fernando Valley. Genicular Artery Embolization (GAE) and other minimally invasive procedures. Located in Van Nuys, CA. Take our 2-minute assessment."
+    />
+    <meta
+      property="og:image"
+      content="https://valleyjointpain.com/brand/templates/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Valley Joint Pain Center — knee pain relief without surgery"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Valley Joint Pain Center — Knee pain relief without surgery, San Fernando Valley"
+    />
+    <meta
+      name="twitter:description"
+      content="Non-surgical knee pain treatment in the San Fernando Valley. Genicular Artery Embolization (GAE) and other minimally invasive procedures."
+    />
+    <meta
+      name="twitter:image"
+      content="https://valleyjointpain.com/brand/templates/og-image.png"
+    />
+
     <!-- Schema.org structured data for local medical business -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "MedicalClinic",
         "name": "Valley Joint Pain Center",
+        "image": "https://valleyjointpain.com/brand/templates/og-image.png",
         "url": "https://valleyjointpain.com",
         "telephone": "+18184188165",
         "address": {
@@ -176,6 +208,8 @@
         border-bottom: 1px solid var(--line-soft);
       }
       .nav-inner {
+        position: relative;
+        z-index: 3;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -246,21 +280,29 @@
       .menu-btn svg {
         display: block;
       }
-      .menu-btn .icon-close { display: none; }
-      .menu-btn[aria-expanded="true"] .icon-menu { display: none; }
-      .menu-btn[aria-expanded="true"] .icon-close { display: block; }
+      .menu-btn .icon-close {
+        display: none;
+      }
+      .menu-btn[aria-expanded="true"] .icon-menu {
+        display: none;
+      }
+      .menu-btn[aria-expanded="true"] .icon-close {
+        display: block;
+      }
       .nav-overlay {
         display: none;
         position: fixed;
         inset: 0;
         background: transparent;
-        z-index: 199;
+        z-index: 1;
         cursor: pointer;
       }
       .nav-overlay.visible {
         display: block;
       }
       .nav-drawer {
+        position: relative;
+        z-index: 2;
         border-top: 1px solid var(--line-soft);
         background: rgba(250, 248, 243, 0.97);
         backdrop-filter: blur(12px);
@@ -271,8 +313,14 @@
         display: none !important;
       }
       @keyframes navDrawerSlideDown {
-        from { opacity: 0; transform: translateY(-6px); }
-        to { opacity: 1; transform: translateY(0); }
+        from {
+          opacity: 0;
+          transform: translateY(-6px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
       .nav-drawer-inner {
         padding-top: 8px;
@@ -309,7 +357,9 @@
         border-radius: 999px;
         border-bottom: none !important;
         text-decoration: none;
-        transition: background 0.15s, color 0.15s;
+        transition:
+          background 0.15s,
+          color 0.15s;
       }
       .nav-drawer-inner a.nav-drawer-cta:hover {
         background: var(--teal-700) !important;
@@ -1614,6 +1664,14 @@
       .lm-form-error.visible {
         display: block;
       }
+      .lm-form-error a {
+        color: #fde68a;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+      .lm-form-error a:hover {
+        color: #fff;
+      }
 
       /* Success state */
       .lm-success {
@@ -1947,8 +2005,12 @@
           <a href="about-dr-sabeen-dhand.html">Providers</a>
           <a href="location.html">Location</a>
           <a href="#faq">FAQ</a>
-          <a href="valleyjointpain-insurance-billing.html">Insurance &amp; billing</a>
-          <a href="assessment.html" class="nav-drawer-cta">Take the Assessment</a>
+          <a href="valleyjointpain-insurance-billing.html"
+            >Insurance &amp; billing</a
+          >
+          <a href="assessment.html" class="nav-drawer-cta"
+            >Take the Assessment</a
+          >
         </div>
       </div>
       <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
@@ -2551,8 +2613,8 @@
 
             <div class="lm-form-wrap" id="lmFormWrap">
               <span class="lm-form-label" id="lmFormLabel"
-                >Enter your email and we'll send it immediately — no account
-                needed.</span
+                >Add your name and email, then we’ll open the conversation guide
+                in a new browser tab — no account needed.</span
               >
 
               <div id="lmFormFields">
@@ -2579,7 +2641,7 @@
                     id="lmSubmit"
                     onclick="submitLeadMagnet()"
                   >
-                    Send the guide
+                    Open the guide
                     <svg
                       width="14"
                       height="11"
@@ -2597,18 +2659,26 @@
                   </button>
                 </div>
                 <p class="lm-privacy">
-                  No spam, ever. We follow HIPAA standards and will never sell
-                  or share your email. Unsubscribe any time.
+                  We follow HIPAA standards and will never sell or share your
+                  information. For now the guide opens in your browser instead
+                  of by email.
                 </p>
               </div>
 
               <div class="lm-success" id="lmSuccess">
                 <div class="lm-success-icon">✓</div>
-                <h3 id="lmSuccessName">Your guide is on its way.</h3>
+                <h3 id="lmSuccessName">Your guide is open.</h3>
                 <p>
-                  Check your inbox — the guide should arrive within a minute. If
-                  you don't see it, check your spam folder.<br /><br />When
-                  you're ready, you can also
+                  If you don’t see a new tab, your browser may have blocked it —
+                  you can open
+                  <a href="conversation-guide.pdf" target="_blank" rel="noopener"
+                    >the PDF</a
+                  >
+                  or
+                  <a href="conversation-guide.html" target="_blank" rel="noopener"
+                    >the HTML version</a
+                  >
+                  directly.<br /><br />When you're ready, you can also
                   <a href="assessment.html">take the 2-minute assessment</a> to
                   find out if you're likely to be a candidate for one of our
                   procedures.
@@ -3134,8 +3204,11 @@
       // Open first FAQ by default
       document.querySelector(".faq-item").classList.add("open");
 
-      // Lead magnet → Airtable via Vercel serverless (/api/submit-lead-magnet)
-      async function submitLeadMagnet() {
+      // Lead magnet: open conversation guide PDF in a new tab (email delivery paused).
+      // Still POSTs to /api/submit-lead-magnet in the background when the API is available.
+      const LEAD_MAGNET_GUIDE_URL = "conversation-guide.pdf";
+
+      function submitLeadMagnet() {
         const nameEl = document.getElementById("lmName");
         const emailEl = document.getElementById("lmEmail");
         const btn = document.getElementById("lmSubmit");
@@ -3160,48 +3233,47 @@
         }
 
         const params = new URLSearchParams(window.location.search);
-        const utmSource =
-          params.get("utm_source") || "landing page lead form";
+        const utmSource = params.get("utm_source") || "landing page lead form";
 
         const btnLabel = btn.innerHTML;
         btn.disabled = true;
-        btn.textContent = "Sending…";
+        btn.textContent = "Opening…";
 
-        try {
-          const res = await fetch("/api/submit-lead-magnet", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              firstName: name,
-              email,
-              utm_source: utmSource,
-            }),
-          });
-
-          const data = await res.json().catch(() => ({}));
-
-          if (!res.ok) {
-            throw new Error(
-              data.error ||
-                data.details ||
-                "Something went wrong. Please try again."
-            );
-          }
-
-          const labelEl = document.getElementById("lmFormLabel");
-          if (labelEl) labelEl.hidden = true;
-          document.getElementById("lmFormFields").style.display = "none";
-          document.getElementById("lmSuccess").classList.add("visible");
-          document.getElementById("lmSuccessName").textContent =
-            `${name}, your guide is on its way.`;
-        } catch (e) {
-          errEl.textContent =
-            e.message ||
-            "We couldn’t save your request. Check your connection or try again.";
+        const newTab = window.open(
+          LEAD_MAGNET_GUIDE_URL,
+          "_blank",
+          "noopener,noreferrer",
+        );
+        if (!newTab) {
+          errEl.innerHTML =
+            "We couldn’t open a new tab — often blocked by pop-up settings. Allow pop-ups for this site and try again, or open the " +
+            '<a href="conversation-guide.pdf" target="_blank" rel="noopener">PDF</a> or ' +
+            '<a href="conversation-guide.html" target="_blank" rel="noopener">HTML version</a> directly.';
           errEl.classList.add("visible");
           btn.disabled = false;
           btn.innerHTML = btnLabel;
+          return;
         }
+
+        fetch("/api/submit-lead-magnet", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            firstName: name,
+            email,
+            utm_source: utmSource,
+          }),
+        }).catch(() => {});
+
+        const labelEl = document.getElementById("lmFormLabel");
+        if (labelEl) labelEl.hidden = true;
+        document.getElementById("lmFormFields").style.display = "none";
+        document.getElementById("lmSuccess").classList.add("visible");
+        document.getElementById("lmSuccessName").textContent =
+          `${name}, your guide should be open in a new tab.`;
+
+        btn.disabled = false;
+        btn.innerHTML = btnLabel;
       }
     </script>
   </body>
